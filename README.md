@@ -1,8 +1,31 @@
-wepo
+What is it?
 -----------
 
-Wepo is a powerful and flexible CMS and Framework build on Django
+Wepo is a powerful and flexible CMS and Framework
+build on Django.
 
+The Latest Version
+------------------
+
+Details of the current development version v0.4 can be found below.
+
+Documentation
+-------------
+
+The documentation available as of the date of this release is
+included in HTML format format in the docs/manual/ directory.
+
+Installation
+------------
+
+Please see the file called docs/INSTALL
+
+Authors
+-------
+
+  o Tim Rijavec <tim@coder.si>
+     Founder and main developer on the project
+     
 Legal Stuff 
 -----------
 
