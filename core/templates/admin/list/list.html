@@ -1,0 +1,40 @@
+{% load core_filters %}
+
+<table class="table table-striped table-checkable table-flipscroll">
+   <thead>
+   <tr>
+      <th class="checkbox-column"><input type="checkbox" class="uniform checkbox-toggle"></th>
+      {% for field in fields %}
+         {% if not field.read_only %}
+            <th>{{ field.name }}</th>
+         {% endif %}
+      {% endfor %}
+      <th class="span1">Actions</th>
+   </tr>
+   </thead>
+   <tbody>
+   {% for object in objects %}
+      <tr data-item-id="{{ object.id }}" {% if object|exists_and_false:"enabled" %}class="error"{% endif %}>
+
+      <td class="checkbox-column"><input type="checkbox" class="uniform" value="{{ object.id }}" id="item-{{ object.id }}" ></td>
+      {% for field in fields %}
+         {% if not field.read_only %}
+            <td>{{ object|get_attribute:field.key_name }}</td>
+         {% endif %}
+      {% endfor %}
+
+      <td class="span1">
+         <div class="btn-group">
+            <button rel="tooltip" class="btn" data-value="{{ object.id }}" data-type="edit" data-original-title="Edit"><i class="icol-edit"></i></button>
+            {% if object|exists_and_false:"enabled" %}
+               <button rel="tooltip" class="btn" data-value="{{ object.id }}" data-type="enable" data-original-title="Enable"><i class="icol-enable"></i></button>
+            {% else %}
+               <button rel="tooltip" class="btn" data-value="{{ object.id }}" data-type="delete" data-original-title="Delete"><i class="icol-delete"></i></button>
+            {% endif %}
+         </div>
+      </td>
+
+      </tr>
+      {% endfor %}
+   </tbody>
+</table>

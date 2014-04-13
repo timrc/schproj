@@ -1,0 +1,40 @@
+{% load core_filters %}
+
+<div class="dt_footer">
+   <div class="row-fluid">
+      <div class="span6">
+         <div class="dataTables_info" id="demo-dtable-01_info">Showing 1 to 10 of 259 entries</div>
+      </div>
+      <div class="span6">
+         <div class="dataTables_paginate paging_bootstrap pagination">
+            <ul>
+
+            {% ifequal page first %}
+               <li class="disabled"><a>First</a></li>
+               <li class="disabled"><a>← Previous</a></li>
+            {% else %}
+               <li><a href="{{ url|remove_url_key:'page-num' }}page-num={{ first }}">First</a></li>
+               <li><a href="{{ url|remove_url_key:'page-num' }}page-num={{ page|add:-1 }}">← Previous</a></li>
+            {% endifequal %}
+
+            {% for pag in pagination %}
+               {% if pag == page %}
+                  <li class="active"><a href="?page-num={{ pag }}">{{ pag|add:1 }}</a></li>
+               {% else %}
+                  <li><a href="{{ url|remove_url_key:'page-num' }}page-num={{ pag }}">{{ pag|add:1 }}</a></li>
+               {% endif %}
+            {% endfor %}
+
+            {% ifequal page last %}
+               <li class="disabled"><a>Next →</a></li>
+               <li class="disabled"><a>Last</a></li>
+            {% else %}
+               <li><a href="{{ url|remove_url_key:'page-num' }}page-num={{ page|add:1 }}">Next →</a></li>
+               <li><a href="{{ url|remove_url_key:'page-num' }}page-num={{ last }}">Last</a></li>
+            {% endifequal %}
+
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>

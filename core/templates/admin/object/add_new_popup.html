@@ -1,0 +1,27 @@
+{% load core_tags %}
+{% load core_filters %}
+{% autoescape off %}
+
+<form class="form-horizontal" id="object-new" action="/block/core/object/edit?raw=true" method="POST">
+
+   {{ object_type }}
+   {{ response_type }}
+   {{ parent_model_name }}
+   {{ parent_id }}
+   {{ parent_field }}
+
+   {% for field in fields %}
+   <div class="row-fluid">
+      {{ field }}
+   </div>
+   {% endfor %}
+
+   <hr class="separator bottom">
+
+   <div class="form-actions" style="margin: 0; border: none;">
+      {{ add_button }}
+   </div>
+
+</form>
+
+{% endautoescape %}

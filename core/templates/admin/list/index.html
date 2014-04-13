@@ -1,0 +1,31 @@
+{# filter form #}
+{% if filter_form %}
+   {% include 'list/filter.html' with filter_form=filter_form %}
+{% endif %}
+
+<div class="widget row-fluid">
+   <div class="widget-header">
+      <span class="title">Object listing</span>
+   </div>
+
+   {# bulk actions #}
+   {% if bulk_actions %}
+      {% include 'list/bulk_actions.html' with bulk_actions=bulk_actions %}
+   {% endif %}
+
+   <div class="widget-content table-container dataTables_wrapper form-inline">
+
+      {# list header filter #}
+      {% if use_filter %}
+         {% include 'list/header_filter.html' with per_page_list=per_page_list filter=filter %}
+      {% endif %}
+
+      {# listing #}
+      {% include 'list/list.html' with fields=fields objects=objects %}
+
+      {# pagination #}
+      {% if pagination %}
+         {% include 'list/pagination.html' with url=url pagination=pagination first=first page=page last=last %}
+      {% endif %}
+   </div>
+</div>

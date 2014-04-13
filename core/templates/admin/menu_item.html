@@ -1,0 +1,12 @@
+{% load core_filters %}
+{% if item.childs %}
+   <li> <a href="#"> <i class="icon-folder-open-alt"></i> {{ item.item.name|_ }} <span class="label label-info pull-right">{{ item.childs|length }}</span> <i class="arrow icon-angle-left"></i></a>
+   <ul class="sub-menu {% if item.active %}opened{% endif %}">
+      {% for child in item.childs %}
+         {% include include_template with item=child include_template=include_template %}
+      {% endfor %}
+   </ul>
+   </li>
+{% else %}
+   <li class="{% if item.active %}current{% endif %}"> <a href="{{ item.item.seo }}/{{ item.item.url }}.html">{{ item.item.name|_ }}</a> </li>
+{% endif %}

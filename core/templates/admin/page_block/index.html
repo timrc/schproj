@@ -1,0 +1,45 @@
+<div id="page-blocks">
+
+   {% for item in items %}
+
+      {% if not item.join_left %}
+         {% if forloop.counter0 != 0 %}</div>{% endif %}
+      <div class="row-fluid">
+      {% endif %}
+
+         <div class="span{{ item.width }} widget dragbox-content">
+            <div class="widget-header light">
+               <span class="title">{{ item.name }}</span>
+            </div>
+            <div class="widget-content">
+
+               {% for element in item.elements %}
+
+                  <div class="widget" data-section="{{ element.section }}">
+                     <div class="widget-content">
+                        <h4>{{ element.name }}</h4>
+                        <div class="widget-sortable" id="{{ element.section }}">
+
+                           {% for block in element.blocks %}
+                              {% include include_item_file with block=block.block status=block.status attributes=block.attributes %}
+                           {% endfor %}
+
+                        </div>
+                     </div>
+
+                     <div class="toolbar btn-toolbar">
+                        <div class="btn-group dropup">
+                           <span class="btn wepo-add-block"><i class="icol-accept"></i>Add</span>
+                        </div>
+                     </div>
+                  </div>
+
+               {% endfor %}
+
+            </div>
+         </div>
+
+   {% endfor %}
+   </div>
+   <input id='wepo_form_blocks' name='blocks' type='hidden' value='{{ data }}'>
+</div>

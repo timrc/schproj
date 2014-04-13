@@ -1,0 +1,189 @@
+\hypertarget{classcore_1_1models_1_1User}{\section{core.\-models.\-User Class Reference}
+\label{classcore_1_1models_1_1User}\index{core.\-models.\-User@{core.\-models.\-User}}
+}
+
+
+\hyperlink{classcore_1_1models_1_1User}{User}.  
+
+
+Inheritance diagram for core.\-models.\-User\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcore_1_1models_1_1User}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1models_1_1User_1_1Meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcore_1_1models_1_1User_a5c083b460e2d14df907edde626f3df4d}{\-\_\-\-\_\-unicode\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcore_1_1models_1_1User_aafe570b9f5a7f23c072d5fdb1e17ad13}{save}
+\begin{DoxyCompactList}\small\item\em Custom save method. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1User_a72865af96fbe29266f8a6131643170b0}{get\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Get seo link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1models_1_1User_a850844de5beed6acc7ce8548e56b40f6}{key\-\_\-name}
+\item 
+\hyperlink{classcore_1_1models_1_1User_a7d320bc1c53745b1f8ca4f91e3cc19ea}{password}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcore_1_1models_1_1User_a214f7506978bd5f697a493f1b4f83553}{email} = dmodels.\-Email\-Field(db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1User}{User} email address for authentication. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1User_a7d320bc1c53745b1f8ca4f91e3cc19ea}{password} = dmodels.\-Char\-Field(max\-\_\-length=64, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1User}{User} password for authentication. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1User_a6e3378459abae4fc27fcd46d1cd24990}{name} = dmodels.\-Char\-Field(max\-\_\-length=128, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1User}{User} name. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1User_a3804f136ea7cba3a9611f8432450ed4c}{surname} = dmodels.\-Char\-Field(max\-\_\-length=128, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1User}{User} surname. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1User_a17a29647bdff999f6f8ffc3bf744dd10}{groups} = dmodels.\-Many\-To\-Many\-Field(\hyperlink{classcore_1_1models_1_1Group}{Group})
+\begin{DoxyCompactList}\small\item\em List of groups in user. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1User_a784eb0d695f930aeb18eeb4f7f8a166e}{permissions} = \hyperlink{classcore_1_1fields_1_1JsonField}{Json\-Field}(null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em List of permissions for user. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1User_ac92e0f9b0871d62b4cb283be3eb44f64}{addresses} = dmodels.\-Many\-To\-Many\-Field(\hyperlink{classcore_1_1models_1_1Address}{Address})
+\begin{DoxyCompactList}\small\item\em List of addresses for user. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1User_a95cfe2aedf4dea7b41e0983035663e43}{last\-\_\-login} = dmodels.\-Date\-Time\-Field(null=True, blank=True, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em Date time of last login. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1User_ad67e2fdbefe9f02c44070d697cf9faa1}{image} = dmodels.\-Foreign\-Key(\hyperlink{classcore_1_1models_1_1File}{File}, null=True, blank=True)
+\item 
+tuple \hyperlink{classcore_1_1models_1_1User_a230fb79dd5dd210ea52c4c35cbe122e2}{date\-\_\-of\-\_\-birth} = dmodels.\-Date\-Time\-Field(db\-\_\-index=True, null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em Date of birth. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1User_a7dc05b5317795603bcd3ca4dbb5cca8f}{gender} = dmodels.\-Char\-Field(max\-\_\-length=6, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1User}{User} gender. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcore_1_1models_1_1User}{User}. 
+
+Core user to login into the system etc. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcore_1_1models_1_1User_a5c083b460e2d14df907edde626f3df4d}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{\-\_\-\-\_\-unicode\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-User.\-\_\-\-\_\-unicode\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1User_a5c083b460e2d14df907edde626f3df4d}
+\hypertarget{classcore_1_1models_1_1User_a72865af96fbe29266f8a6131643170b0}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!get\-\_\-seo@{get\-\_\-seo}}
+\index{get\-\_\-seo@{get\-\_\-seo}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{get\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-User.\-get\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1User_a72865af96fbe29266f8a6131643170b0}
+
+
+Get seo link. 
+
+\hypertarget{classcore_1_1models_1_1User_aafe570b9f5a7f23c072d5fdb1e17ad13}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!save@{save}}
+\index{save@{save}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-User.\-save (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{force\-\_\-insert = {\ttfamily False}, }
+\item[{}]{force\-\_\-update = {\ttfamily False}, }
+\item[{}]{using = {\ttfamily None}, }
+\item[{}]{update\-\_\-fields = {\ttfamily None}, }
+\item[{}]{change\-\_\-password = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1User_aafe570b9f5a7f23c072d5fdb1e17ad13}
+
+
+Custom save method. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcore_1_1models_1_1User_ac92e0f9b0871d62b4cb283be3eb44f64}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!addresses@{addresses}}
+\index{addresses@{addresses}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{addresses}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-addresses = dmodels.\-Many\-To\-Many\-Field({\bf Address})\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_ac92e0f9b0871d62b4cb283be3eb44f64}
+
+
+List of addresses for user. 
+
+\hypertarget{classcore_1_1models_1_1User_a230fb79dd5dd210ea52c4c35cbe122e2}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!date\-\_\-of\-\_\-birth@{date\-\_\-of\-\_\-birth}}
+\index{date\-\_\-of\-\_\-birth@{date\-\_\-of\-\_\-birth}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{date\-\_\-of\-\_\-birth}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-date\-\_\-of\-\_\-birth = dmodels.\-Date\-Time\-Field(db\-\_\-index=True, null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_a230fb79dd5dd210ea52c4c35cbe122e2}
+
+
+Date of birth. 
+
+\hypertarget{classcore_1_1models_1_1User_a214f7506978bd5f697a493f1b4f83553}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!email@{email}}
+\index{email@{email}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{email}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-email = dmodels.\-Email\-Field(db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_a214f7506978bd5f697a493f1b4f83553}
+
+
+\hyperlink{classcore_1_1models_1_1User}{User} email address for authentication. 
+
+\hypertarget{classcore_1_1models_1_1User_a7dc05b5317795603bcd3ca4dbb5cca8f}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!gender@{gender}}
+\index{gender@{gender}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{gender}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-gender = dmodels.\-Char\-Field(max\-\_\-length=6, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_a7dc05b5317795603bcd3ca4dbb5cca8f}
+
+
+\hyperlink{classcore_1_1models_1_1User}{User} gender. 
+
+\hypertarget{classcore_1_1models_1_1User_a17a29647bdff999f6f8ffc3bf744dd10}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!groups@{groups}}
+\index{groups@{groups}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{groups}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-groups = dmodels.\-Many\-To\-Many\-Field({\bf Group})\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_a17a29647bdff999f6f8ffc3bf744dd10}
+
+
+List of groups in user. 
+
+\hypertarget{classcore_1_1models_1_1User_ad67e2fdbefe9f02c44070d697cf9faa1}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!image@{image}}
+\index{image@{image}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}tuple core.\-models.\-User.\-image = dmodels.\-Foreign\-Key({\bf File}, null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_ad67e2fdbefe9f02c44070d697cf9faa1}
+\hypertarget{classcore_1_1models_1_1User_a850844de5beed6acc7ce8548e56b40f6}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-key\-\_\-name}}\label{classcore_1_1models_1_1User_a850844de5beed6acc7ce8548e56b40f6}
+\hypertarget{classcore_1_1models_1_1User_a95cfe2aedf4dea7b41e0983035663e43}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!last\-\_\-login@{last\-\_\-login}}
+\index{last\-\_\-login@{last\-\_\-login}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{last\-\_\-login}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-last\-\_\-login = dmodels.\-Date\-Time\-Field(null=True, blank=True, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_a95cfe2aedf4dea7b41e0983035663e43}
+
+
+Date time of last login. 
+
+\hypertarget{classcore_1_1models_1_1User_a6e3378459abae4fc27fcd46d1cd24990}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!name@{name}}
+\index{name@{name}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-name = dmodels.\-Char\-Field(max\-\_\-length=128, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_a6e3378459abae4fc27fcd46d1cd24990}
+
+
+\hyperlink{classcore_1_1models_1_1User}{User} name. 
+
+\hypertarget{classcore_1_1models_1_1User_a7d320bc1c53745b1f8ca4f91e3cc19ea}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!password@{password}}
+\index{password@{password}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{password}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-password = dmodels.\-Char\-Field(max\-\_\-length=64, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_a7d320bc1c53745b1f8ca4f91e3cc19ea}
+
+
+\hyperlink{classcore_1_1models_1_1User}{User} password for authentication. 
+
+\hypertarget{classcore_1_1models_1_1User_a7d320bc1c53745b1f8ca4f91e3cc19ea}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!password@{password}}
+\index{password@{password}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{password}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-password}}\label{classcore_1_1models_1_1User_a7d320bc1c53745b1f8ca4f91e3cc19ea}
+\hypertarget{classcore_1_1models_1_1User_a784eb0d695f930aeb18eeb4f7f8a166e}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!permissions@{permissions}}
+\index{permissions@{permissions}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{permissions}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-permissions = {\bf Json\-Field}(null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_a784eb0d695f930aeb18eeb4f7f8a166e}
+
+
+List of permissions for user. 
+
+\hypertarget{classcore_1_1models_1_1User_a3804f136ea7cba3a9611f8432450ed4c}{\index{core\-::models\-::\-User@{core\-::models\-::\-User}!surname@{surname}}
+\index{surname@{surname}!core::models::User@{core\-::models\-::\-User}}
+\subsubsection[{surname}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-User.\-surname = dmodels.\-Char\-Field(max\-\_\-length=128, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1User_a3804f136ea7cba3a9611f8432450ed4c}
+
+
+\hyperlink{classcore_1_1models_1_1User}{User} surname. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/wepo/core/\hyperlink{models_8py}{models.\-py}\end{DoxyCompactItemize}

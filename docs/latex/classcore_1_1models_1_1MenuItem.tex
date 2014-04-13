@@ -1,0 +1,169 @@
+\hypertarget{classcore_1_1models_1_1MenuItem}{\section{core.\-models.\-Menu\-Item Class Reference}
+\label{classcore_1_1models_1_1MenuItem}\index{core.\-models.\-Menu\-Item@{core.\-models.\-Menu\-Item}}
+}
+
+
+\hyperlink{classcore_1_1models_1_1Menu}{Menu} item.  
+
+
+Inheritance diagram for core.\-models.\-Menu\-Item\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcore_1_1models_1_1MenuItem}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1models_1_1MenuItem_1_1Meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcore_1_1models_1_1MenuItem_a7ca6064d82c1e02ddf732fccb5d1430b}{\-\_\-\-\_\-unicode\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcore_1_1models_1_1MenuItem_ab51a5ab563ed2c10ab0a74342a1b4197}{save}
+\begin{DoxyCompactList}\small\item\em Custom save method. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1MenuItem_a85b4e94e816f9575ad9a950c7e01d9cc}{get\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Get seo link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1models_1_1MenuItem_a6eccff1165c95be4b9c0efee213e3878}{key\-\_\-name}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcore_1_1models_1_1MenuItem_ab3946f967b3a1fce02d39c5ecb2185f5}{name} = dmodels.\-Char\-Field(max\-\_\-length=255)
+\begin{DoxyCompactList}\small\item\em Name of the menu item. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1MenuItem_a6eccff1165c95be4b9c0efee213e3878}{key\-\_\-name} = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em Unique identifier of the menu item. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1MenuItem_a0ed621cf4f336eee94ee6af73f138add}{seo} = dmodels.\-Foreign\-Key(\hyperlink{classcore_1_1models_1_1Seo}{Seo}, null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Seo}{Seo} link, linked to the menu item. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1MenuItem_a05a0b2b1302e5a8e224ae29a4edbe93b}{url} = dmodels.\-U\-R\-L\-Field()
+\begin{DoxyCompactList}\small\item\em Extra menu item url. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1MenuItem_ac284a37490aad36640bd848f29466232}{parent} = dmodels.\-Foreign\-Key('self', null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em Parent menu item. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1MenuItem_afebbc45130eae0cea9c5095ef6cd98b1}{menu} = dmodels.\-Foreign\-Key(\hyperlink{classcore_1_1models_1_1Menu}{Menu}, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Menu}{Menu} of the relation. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1MenuItem_a82ed62dbf13487126c5bc1f458c4b67c}{sort} = dmodels.\-Positive\-Small\-Integer\-Field()
+\begin{DoxyCompactList}\small\item\em Numerical position of the relation. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1MenuItem_a57fc994079c4c38d7ef278c6d364f435}{level} = dmodels.\-Positive\-Small\-Integer\-Field()
+\begin{DoxyCompactList}\small\item\em Level of the relation. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1MenuItem_ad8a9b116de08fe5fb590ac565c10917a}{enabled} = dmodels.\-Boolean\-Field(default=True)
+\begin{DoxyCompactList}\small\item\em Status if the relation is enabled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcore_1_1models_1_1Menu}{Menu} item. 
+
+(Main menu, Admin side menu, Admin top menu, ...) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcore_1_1models_1_1MenuItem_a7ca6064d82c1e02ddf732fccb5d1430b}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{\-\_\-\-\_\-unicode\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Menu\-Item.\-\_\-\-\_\-unicode\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1MenuItem_a7ca6064d82c1e02ddf732fccb5d1430b}
+\hypertarget{classcore_1_1models_1_1MenuItem_a85b4e94e816f9575ad9a950c7e01d9cc}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!get\-\_\-seo@{get\-\_\-seo}}
+\index{get\-\_\-seo@{get\-\_\-seo}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{get\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Menu\-Item.\-get\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1MenuItem_a85b4e94e816f9575ad9a950c7e01d9cc}
+
+
+Get seo link. 
+
+\hypertarget{classcore_1_1models_1_1MenuItem_ab51a5ab563ed2c10ab0a74342a1b4197}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!save@{save}}
+\index{save@{save}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Menu\-Item.\-save (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{force\-\_\-insert = {\ttfamily False}, }
+\item[{}]{force\-\_\-update = {\ttfamily False}, }
+\item[{}]{using = {\ttfamily None}, }
+\item[{}]{update\-\_\-fields = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1MenuItem_ab51a5ab563ed2c10ab0a74342a1b4197}
+
+
+Custom save method. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcore_1_1models_1_1MenuItem_ad8a9b116de08fe5fb590ac565c10917a}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!enabled@{enabled}}
+\index{enabled@{enabled}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-enabled = dmodels.\-Boolean\-Field(default=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1MenuItem_ad8a9b116de08fe5fb590ac565c10917a}
+
+
+Status if the relation is enabled. 
+
+\hypertarget{classcore_1_1models_1_1MenuItem_a6eccff1165c95be4b9c0efee213e3878}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-key\-\_\-name = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1MenuItem_a6eccff1165c95be4b9c0efee213e3878}
+
+
+Unique identifier of the menu item. 
+
+\hypertarget{classcore_1_1models_1_1MenuItem_a6eccff1165c95be4b9c0efee213e3878}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-key\-\_\-name}}\label{classcore_1_1models_1_1MenuItem_a6eccff1165c95be4b9c0efee213e3878}
+\hypertarget{classcore_1_1models_1_1MenuItem_a57fc994079c4c38d7ef278c6d364f435}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!level@{level}}
+\index{level@{level}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-level = dmodels.\-Positive\-Small\-Integer\-Field()\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1MenuItem_a57fc994079c4c38d7ef278c6d364f435}
+
+
+Level of the relation. 
+
+\hypertarget{classcore_1_1models_1_1MenuItem_afebbc45130eae0cea9c5095ef6cd98b1}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!menu@{menu}}
+\index{menu@{menu}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-menu = dmodels.\-Foreign\-Key({\bf Menu}, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1MenuItem_afebbc45130eae0cea9c5095ef6cd98b1}
+
+
+\hyperlink{classcore_1_1models_1_1Menu}{Menu} of the relation. 
+
+\hypertarget{classcore_1_1models_1_1MenuItem_ab3946f967b3a1fce02d39c5ecb2185f5}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!name@{name}}
+\index{name@{name}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-name = dmodels.\-Char\-Field(max\-\_\-length=255)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1MenuItem_ab3946f967b3a1fce02d39c5ecb2185f5}
+
+
+Name of the menu item. 
+
+\hypertarget{classcore_1_1models_1_1MenuItem_ac284a37490aad36640bd848f29466232}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!parent@{parent}}
+\index{parent@{parent}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-parent = dmodels.\-Foreign\-Key('self', null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1MenuItem_ac284a37490aad36640bd848f29466232}
+
+
+Parent menu item. 
+
+\hypertarget{classcore_1_1models_1_1MenuItem_a0ed621cf4f336eee94ee6af73f138add}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!seo@{seo}}
+\index{seo@{seo}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{seo}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-seo = dmodels.\-Foreign\-Key({\bf Seo}, null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1MenuItem_a0ed621cf4f336eee94ee6af73f138add}
+
+
+\hyperlink{classcore_1_1models_1_1Seo}{Seo} link, linked to the menu item. 
+
+\hypertarget{classcore_1_1models_1_1MenuItem_a82ed62dbf13487126c5bc1f458c4b67c}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!sort@{sort}}
+\index{sort@{sort}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-sort = dmodels.\-Positive\-Small\-Integer\-Field()\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1MenuItem_a82ed62dbf13487126c5bc1f458c4b67c}
+
+
+Numerical position of the relation. 
+
+\hypertarget{classcore_1_1models_1_1MenuItem_a05a0b2b1302e5a8e224ae29a4edbe93b}{\index{core\-::models\-::\-Menu\-Item@{core\-::models\-::\-Menu\-Item}!url@{url}}
+\index{url@{url}!core::models::MenuItem@{core\-::models\-::\-Menu\-Item}}
+\subsubsection[{url}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Menu\-Item.\-url = dmodels.\-U\-R\-L\-Field()\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1MenuItem_a05a0b2b1302e5a8e224ae29a4edbe93b}
+
+
+Extra menu item url. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/wepo/core/\hyperlink{models_8py}{models.\-py}\end{DoxyCompactItemize}

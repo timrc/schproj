@@ -1,0 +1,24 @@
+<div class="dt_header">
+   <form method="get">
+      <div class="row-fluid">
+         <div class="span6">
+            <div id="demo-dtable-01_length" class="dataTables_length">
+               <label>
+                  {% if per_page_list %}
+                     <select name="per-page" size="1">
+                        {% for pp in per_page_list %}
+                           <option value="{{ pp }}" {% if pp == per_page %}selected="selected"{% endif %}>{{ pp }}</option>
+                        {% endfor %}
+                     </select> records per page
+                  {% endif %}
+               </label>
+            </div>
+         </div>
+         <div class="span6">
+            <div class="dataTables_filter" id="demo-dtable-01_filter">
+               <label>Search: <input type="text" name="filter" value="{{ filter }}"></label>
+            </div>
+         </div>
+      </div>
+   </form>
+</div>

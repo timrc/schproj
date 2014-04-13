@@ -1,0 +1,186 @@
+
+
+
+== Description ==
+
+== Prerequisites ==
+ * Python 2.7
+ * Git
+ * Django 1.5
+
+== Installation ==
+
+==== Basic packages ====
+{{{
+# install python, v 2.7
+sudo apt-get install python
+
+# install python pip
+sudo apt-get install python-pip
+
+# install virtual environment
+sudo apt-get install python-virtualenv
+virtualenv virtual
+source virtual/bin/activate
+
+# install django
+sudo pip install django
+
+# install git
+sudo apt-get install git
+
+# install some libraries
+pip install python-magic
+pip install python-dateutil
+
+# install memcached
+sudo apt-get install memcached
+pip install johnny-cache
+pip install python-memcached
+
+# install imagemagick
+sudo apt-get install imagemagick
+sudo apt-get install graphicsmagick-imagemagick-compat
+sudo apt-get install libgraphicsmagick++1-dev libboost-python-dev
+sudo apt-get install g++
+pip install pgmagick
+}}}
+
+==== Python libraries ====
+{{{
+# install python mysqldb
+sudo apt-get install python-mysqldb
+https://github.com/ahupp/python-magic
+
+# install packages
+sudo pip install johnny-cache
+sudo pip install python-memcached
+.... if that doesn't work: apt-get install python-memcache
+sudo pip install MySQL-python
+sudo pip install feedparser
+
+# Deprecated
+.... if that doesn't work: apt-get install python-feedparser
+sudo pip install BeautifulSoup
+sudo apt-get install python-dateutil
+}}}
+
+
+=== Configure project ===
+ * Copy wepo/.settings.local.py to wepo/settings_local.py
+
+
+== Install database ==
+ * Create database
+ * Configure your local settings in wepo/settings.py folder
+
+{{{
+# Create tables, keys, indexes
+./manage.py syncdb
+
+# Install core data
+./manage.py sync
+}}}
+
+
+
+
+== Development in Wepo ==
+=== Package ===
+ * Package is python directory which contains '''_''''''_init_''''''_.py''' file
+
+=== Applications ===
+ * Application is an extended python package
+ * It is located in '''apps/''' directory
+ * It must contains '''templates''' and '''static''' directories
+ * To enable application, append it to '''WEPO_APPS''' variable in settings
+
+==== Predefined content installation ====
+ * Create new package called '''install''' under your application
+ * Copy skeleton to your _''''''_init_''''''_.py file in install folder (use existing application for reference)
+{{{
+#! /usr/bin/python
+#
+#  Wepo YOUR APPLICATION NAME install models fixtures
+#
+
+from apps.core.helper.install_help import WepoFixtures as Fixtures
+from apps.core.helper.install_help import WepoFixture as Fixture
+from apps.core.helper.install_help import WepoFixtureData as F
+
+
+# Module fixtures
+fixtures = Fixtures()
+relations = []
+
+## MODEL NAME as in (Block, Page, ...)
+#
+fixture = Fixture('MODEL NAME')
+fixture.add(
+    F(NEW FIXTURE 1 SETTINGS),
+    F(NEW FIXTURE 2 SETTINGS),
+    ...
+)
+fixtures.append(fixture)
+}}}
+
+
+==== Templates ====
+ * Put all template html files in '''templates''' directory
+ * '''Use existing application (user or admin) for reference'''
+
+
+==== Assets (static files) ====
+ * Assets are images, javascript, css and other static files specified for application
+ * Put all static files in '''static''' directory
+ * '''Use existing application (user or admin) for reference'''
+
+
+==== Models ====
+ * Each application can have it own database model
+ * Models are defined in models.py file
+ * '''Use existing application (core) for reference'''
+
+
+==== Extended (hardcoded) urls and views ====
+ * Application can have it's own defined (hardcoded) urls
+ * Define them in urls.py file
+ * Can be usefeull to call some service (like for authentication)
+ * Define a view for url in views.py
+ * '''Use existing application (user) for reference'''
+
+
+==== Application permissions ====
+ * Create '''permissions''' package under your application
+ * Every application can contain callback for permission created for application
+ * Callback is a function defined in _''''''_init_''''''_.py file under permissions package with a permission_ prefix
+ * '''Use existing application (core) for reference'''
+
+
+
+Core model decorators:
+
+
+   * field_config
+
+      Description
+         With this decorator you configure the fields of every model.
+
+      Usage:
+         Add it before the model declaration.
+
+      Code:
+         @field_config(name = 'name', widget = {'type': 'TextInput'}, required = False }
+         class MyModel(models.Model)
+
+      Valid configurations:
+         widget = {
+            'type': 'FieldWidget',     # Required, field widget name
+            'settings': {              # Optional, additional settings for the widget itself.
+               'render_value': True,
+               'attrs': {              #           attrs - html tag attributes as class,id,..
+                  'placeholder': 'Name',
+                  'required': ''
+               }
+            }
+         }

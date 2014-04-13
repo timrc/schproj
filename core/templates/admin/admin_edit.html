@@ -1,0 +1,43 @@
+<div class="row-fluid">
+   <div class="span12 widget">
+      <div class="widget-header">
+         <span class="title"><i class="icon-tag"></i>Field set & Legends</span>
+
+         <div class="toolbar">
+            <ul class="nav nav-pills">
+               {% for group in field_groups %}
+                  {% if forloop.first %}
+                     <li class="active"><a href="#tab-{{ group.group }}" data-toggle="tab">{{ group.group }}</a></li>
+                  {% else %}
+                     <li><a href="#tab-{{ group.group }}" data-toggle="tab">{{ group.group }}</a></li>
+                  {% endif %}
+               {% endfor %}
+            </ul>
+         </div>
+
+      </div>
+
+      <div class="widget-content form-container">
+
+         <form id="validate-edit-{{ model }}" class="vertical-form" method="post">
+            <input type="hidden" name="redirect-url" value="{{ redirect_url }}" />
+
+            <input type="hidden" name="wepo_model" value="{{ model }}" />
+            <input type="hidden" name="wepo_instance" value="{{ id }}" />
+
+            <div class="tab-content">
+
+               {{ form.as_stack }}
+
+            </div>
+
+            <div class="form-actions btn-toolbar">
+               <input type="submit" value="{{ save_button }}" class="btn btn-primary pull-right">
+               <input type="submit" value="Cancel" class="btn btn-danger pull-right">
+            </div>
+         </form>
+
+      </div>
+
+   </div>
+</div>

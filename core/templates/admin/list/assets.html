@@ -1,0 +1,51 @@
+<div id="wizard">
+   <div id="rootwizard">
+      <div class="navbar">
+         <div class="navbar-inner">
+            <div class="container">
+               <ul class="nav">
+
+                  {% for asset_group,assets in data.items %}
+                     <li class="{% if forloop.first %}active{% endif %}"><a href="#tab_assets_{{ forloop.counter }}" data-toggle="tab"><i class="icon-leaf"></i>{{ asset_group|title }}</a></li>
+                  {% endfor %}
+
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <div class="tab-content">
+
+         {% for group,assets in data.items %}
+
+         <div class="tab-pane {% if forloop.first %}active{% endif %}" id="tab_assets_{{ forloop.counter }}">
+            <fieldset>
+               <legend class="section">{{ group|title }}</legend>
+               <div class="control-group">
+                  <div class="widget-body cf nestable-lists">
+                     <div id="nestable-style-head" class="dd">
+                        <ol class="dd-list ui-sortable">
+
+                           {% for asset in assets %}
+
+                           <li class="dd-item" data-asset-path="bootstrap" data-asset-name="Bootstrap">
+                              <div class="dd-handle">
+                                 {{ asset.name|title }}
+                                 <button type="button" class="close close-sm select-asset" data-asset="{{ asset.path }}" data-asset-name="{{ asset.name|title }}" data-asset-type="{{ asset.type }}" data-asset-location="{{ asset.location }}"> <i class="icon-download-alt"></i> </button>
+                              </div>
+                           </li>
+
+                           {% endfor %}
+
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+            </fieldset>
+         </div>
+
+         {% endfor %}
+
+      </div>
+   </div>
+</div>

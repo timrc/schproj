@@ -1,0 +1,177 @@
+\hypertarget{namespacecore_1_1asset}{\section{core.\-asset Namespace Reference}
+\label{namespacecore_1_1asset}\index{core.\-asset@{core.\-asset}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecore_1_1asset_abfc7c1a6c6867f4733a6cf6e69af7330}{get\-\_\-assets\-\_\-config}
+\begin{DoxyCompactList}\small\item\em Get asset configs from all apps. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1asset_a5d116997dde8bebaf5a9ab0662f8b620}{get\-\_\-assets\-\_\-static\-\_\-path}
+\begin{DoxyCompactList}\small\item\em Get asset static url. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1asset_ad6694dc10b60b018c7a9fdc106bf83d7}{get\-\_\-all\-\_\-assets}
+\begin{DoxyCompactList}\small\item\em Get all assets. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1asset_a84e2f9bd4a53fdec3f304b964baf797f}{generate\-\_\-asset}
+\begin{DoxyCompactList}\small\item\em Generate asset (javascript, css, meta data) to append it to the page. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1asset_a73ef12f397290d3646061f8df5c837f7}{add\-\_\-asset}
+\begin{DoxyCompactList}\small\item\em Add asset to page request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1asset_a8e55394c1952c1354e357000632b1589}{get\-\_\-assets\-\_\-list}
+\begin{DoxyCompactList}\small\item\em Get assets list of current request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1asset_a574691a1ea02d03a3a097166b5cb8943}{add\-\_\-assets}
+\begin{DoxyCompactList}\small\item\em Add and Load assets to request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1asset_ada0f55990e483339afe3edd9f64cfc3f}{get\-\_\-assets}
+\begin{DoxyCompactList}\small\item\em Get assets for html. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacecore_1_1asset_a73ef12f397290d3646061f8df5c837f7}{\index{core\-::asset@{core\-::asset}!add\-\_\-asset@{add\-\_\-asset}}
+\index{add\-\_\-asset@{add\-\_\-asset}!core::asset@{core\-::asset}}
+\subsubsection[{add\-\_\-asset}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-asset.\-add\-\_\-asset (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{type = {\ttfamily ''}, }
+\item[{}]{code = {\ttfamily \{\}}, }
+\item[{}]{include\-\_\-type = {\ttfamily 'link'}, }
+\item[{}]{position = {\ttfamily 'head'}, }
+\item[{}]{insert = {\ttfamily None}, }
+\item[{}]{insert\-\_\-after = {\ttfamily 0}, }
+\item[{}]{delete = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1asset_a73ef12f397290d3646061f8df5c837f7}
+
+
+Add asset to page request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request object \\
+\hline
+{\em type} & Asset type (javascript, css, ...) \\
+\hline
+{\em code} & Asset code \\
+\hline
+{\em include\-\_\-type} & Asset include type; how the asset will be included (link, include, ..) \\
+\hline
+{\em position} & Asset position; where in the page include generated asset \\
+\hline
+{\em insert} & Find asset and insert new one right after that one \\
+\hline
+{\em insert\-\_\-after} & Insert after few extra positions \\
+\hline
+{\em delete} & Delete asset \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1asset_a574691a1ea02d03a3a097166b5cb8943}{\index{core\-::asset@{core\-::asset}!add\-\_\-assets@{add\-\_\-assets}}
+\index{add\-\_\-assets@{add\-\_\-assets}!core::asset@{core\-::asset}}
+\subsubsection[{add\-\_\-assets}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-asset.\-add\-\_\-assets (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1asset_a574691a1ea02d03a3a097166b5cb8943}
+
+
+Add and Load assets to request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request object \\
+\hline
+{\em assets} & list of assets \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1asset_a84e2f9bd4a53fdec3f304b964baf797f}{\index{core\-::asset@{core\-::asset}!generate\-\_\-asset@{generate\-\_\-asset}}
+\index{generate\-\_\-asset@{generate\-\_\-asset}!core::asset@{core\-::asset}}
+\subsubsection[{generate\-\_\-asset}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-asset.\-generate\-\_\-asset (
+\begin{DoxyParamCaption}
+\item[{}]{type = {\ttfamily ''}, }
+\item[{}]{code = {\ttfamily None}, }
+\item[{}]{include\-\_\-type = {\ttfamily 'link'}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1asset_a84e2f9bd4a53fdec3f304b964baf797f}
+
+
+Generate asset (javascript, css, meta data) to append it to the page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Asset type (javascript, css, ...) \\
+\hline
+{\em code} & Asset code \\
+\hline
+{\em include\-\_\-type} & Asset include type; how the asset will be included (link, include, ..) \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1asset_ad6694dc10b60b018c7a9fdc106bf83d7}{\index{core\-::asset@{core\-::asset}!get\-\_\-all\-\_\-assets@{get\-\_\-all\-\_\-assets}}
+\index{get\-\_\-all\-\_\-assets@{get\-\_\-all\-\_\-assets}!core::asset@{core\-::asset}}
+\subsubsection[{get\-\_\-all\-\_\-assets}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-asset.\-get\-\_\-all\-\_\-assets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1asset_ad6694dc10b60b018c7a9fdc106bf83d7}
+
+
+Get all assets. 
+
+\hypertarget{namespacecore_1_1asset_ada0f55990e483339afe3edd9f64cfc3f}{\index{core\-::asset@{core\-::asset}!get\-\_\-assets@{get\-\_\-assets}}
+\index{get\-\_\-assets@{get\-\_\-assets}!core::asset@{core\-::asset}}
+\subsubsection[{get\-\_\-assets}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-asset.\-get\-\_\-assets (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{position, }
+\item[{}]{request\-\_\-type = {\ttfamily 'html'}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1asset_ada0f55990e483339afe3edd9f64cfc3f}
+
+
+Get assets for html. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request \\
+\hline
+{\em position} & Position in page \\
+\hline
+{\em request\-\_\-type} & Request type for assets \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1asset_abfc7c1a6c6867f4733a6cf6e69af7330}{\index{core\-::asset@{core\-::asset}!get\-\_\-assets\-\_\-config@{get\-\_\-assets\-\_\-config}}
+\index{get\-\_\-assets\-\_\-config@{get\-\_\-assets\-\_\-config}!core::asset@{core\-::asset}}
+\subsubsection[{get\-\_\-assets\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-asset.\-get\-\_\-assets\-\_\-config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1asset_abfc7c1a6c6867f4733a6cf6e69af7330}
+
+
+Get asset configs from all apps. 
+
+\begin{DoxyReturn}{Returns}
+app asset config 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1asset_a8e55394c1952c1354e357000632b1589}{\index{core\-::asset@{core\-::asset}!get\-\_\-assets\-\_\-list@{get\-\_\-assets\-\_\-list}}
+\index{get\-\_\-assets\-\_\-list@{get\-\_\-assets\-\_\-list}!core::asset@{core\-::asset}}
+\subsubsection[{get\-\_\-assets\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-asset.\-get\-\_\-assets\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{}]{request}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1asset_a8e55394c1952c1354e357000632b1589}
+
+
+Get assets list of current request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1asset_a5d116997dde8bebaf5a9ab0662f8b620}{\index{core\-::asset@{core\-::asset}!get\-\_\-assets\-\_\-static\-\_\-path@{get\-\_\-assets\-\_\-static\-\_\-path}}
+\index{get\-\_\-assets\-\_\-static\-\_\-path@{get\-\_\-assets\-\_\-static\-\_\-path}!core::asset@{core\-::asset}}
+\subsubsection[{get\-\_\-assets\-\_\-static\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-asset.\-get\-\_\-assets\-\_\-static\-\_\-path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1asset_a5d116997dde8bebaf5a9ab0662f8b620}
+
+
+Get asset static url. 
+

@@ -1,0 +1,139 @@
+\hypertarget{classcore_1_1models_1_1Address}{\section{core.\-models.\-Address Class Reference}
+\label{classcore_1_1models_1_1Address}\index{core.\-models.\-Address@{core.\-models.\-Address}}
+}
+
+
+\hyperlink{classcore_1_1models_1_1Address}{Address}.  
+
+
+Inheritance diagram for core.\-models.\-Address\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcore_1_1models_1_1Address}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1models_1_1Address_1_1Meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcore_1_1models_1_1Address_ae7662f36c945c920d731c7a6f0eebdf1}{\-\_\-\-\_\-unicode\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcore_1_1models_1_1Address_a087d6a195a42b5568b0bd45f6a68723e}{save}
+\begin{DoxyCompactList}\small\item\em Custom save method. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1Address_a118bcbfcb691e9dd708ce2abd3d1dca4}{get\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Get seo link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1models_1_1Address_a5ebbca47356580cd05088f58d24d025c}{key\-\_\-name}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcore_1_1models_1_1Address_a7d9c715a5bfb018bfc9ca178d91b6b8f}{first\-\_\-name} = dmodels.\-Char\-Field(max\-\_\-length=255, null=True, blank=True)
+\item 
+tuple \hyperlink{classcore_1_1models_1_1Address_abafe62dc9d25c167398a989a22caee51}{last\-\_\-name} = dmodels.\-Char\-Field(max\-\_\-length=255, null=True, blank=True)
+\item 
+tuple \hyperlink{classcore_1_1models_1_1Address_a972fdb0ba26470757d213bdb6f140402}{address} = dmodels.\-Char\-Field(max\-\_\-length=255)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Address}{Address} address. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Address_af65d2b194530748ef11ea7f79606cc0d}{address2} = dmodels.\-Char\-Field(max\-\_\-length=255, null=True, blank=True)
+\item 
+tuple \hyperlink{classcore_1_1models_1_1Address_ac5519e5d6f43f88d8d7c24f4d3439928}{city} = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Address}{Address} city. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Address_affbd91eecd5cf5488103ea1efc16100d}{postcode} = dmodels.\-Char\-Field(max\-\_\-length=64)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Address}{Address} postcode. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Address_a46997a17a6397d68ffb8e0c9e5244c1f}{country} = dmodels.\-Foreign\-Key(\hyperlink{classcore_1_1models_1_1Country}{Country}, null=True, blank=True, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em Linked country to address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcore_1_1models_1_1Address}{Address}. 
+
+\hyperlink{classcore_1_1models_1_1User}{User} address 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcore_1_1models_1_1Address_ae7662f36c945c920d731c7a6f0eebdf1}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{\-\_\-\-\_\-unicode\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Address.\-\_\-\-\_\-unicode\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Address_ae7662f36c945c920d731c7a6f0eebdf1}
+\hypertarget{classcore_1_1models_1_1Address_a118bcbfcb691e9dd708ce2abd3d1dca4}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!get\-\_\-seo@{get\-\_\-seo}}
+\index{get\-\_\-seo@{get\-\_\-seo}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{get\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Address.\-get\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Address_a118bcbfcb691e9dd708ce2abd3d1dca4}
+
+
+Get seo link. 
+
+\hypertarget{classcore_1_1models_1_1Address_a087d6a195a42b5568b0bd45f6a68723e}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!save@{save}}
+\index{save@{save}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Address.\-save (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{force\-\_\-insert = {\ttfamily False}, }
+\item[{}]{force\-\_\-update = {\ttfamily False}, }
+\item[{}]{using = {\ttfamily None}, }
+\item[{}]{update\-\_\-fields = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Address_a087d6a195a42b5568b0bd45f6a68723e}
+
+
+Custom save method. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcore_1_1models_1_1Address_a972fdb0ba26470757d213bdb6f140402}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!address@{address}}
+\index{address@{address}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{address}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Address.\-address = dmodels.\-Char\-Field(max\-\_\-length=255)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Address_a972fdb0ba26470757d213bdb6f140402}
+
+
+\hyperlink{classcore_1_1models_1_1Address}{Address} address. 
+
+\hypertarget{classcore_1_1models_1_1Address_af65d2b194530748ef11ea7f79606cc0d}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!address2@{address2}}
+\index{address2@{address2}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{address2}]{\setlength{\rightskip}{0pt plus 5cm}tuple core.\-models.\-Address.\-address2 = dmodels.\-Char\-Field(max\-\_\-length=255, null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Address_af65d2b194530748ef11ea7f79606cc0d}
+\hypertarget{classcore_1_1models_1_1Address_ac5519e5d6f43f88d8d7c24f4d3439928}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!city@{city}}
+\index{city@{city}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{city}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Address.\-city = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Address_ac5519e5d6f43f88d8d7c24f4d3439928}
+
+
+\hyperlink{classcore_1_1models_1_1Address}{Address} city. 
+
+\hypertarget{classcore_1_1models_1_1Address_a46997a17a6397d68ffb8e0c9e5244c1f}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!country@{country}}
+\index{country@{country}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{country}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Address.\-country = dmodels.\-Foreign\-Key({\bf Country}, null=True, blank=True, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Address_a46997a17a6397d68ffb8e0c9e5244c1f}
+
+
+Linked country to address. 
+
+\hypertarget{classcore_1_1models_1_1Address_a7d9c715a5bfb018bfc9ca178d91b6b8f}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!first\-\_\-name@{first\-\_\-name}}
+\index{first\-\_\-name@{first\-\_\-name}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{first\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}tuple core.\-models.\-Address.\-first\-\_\-name = dmodels.\-Char\-Field(max\-\_\-length=255, null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Address_a7d9c715a5bfb018bfc9ca178d91b6b8f}
+\hypertarget{classcore_1_1models_1_1Address_a5ebbca47356580cd05088f58d24d025c}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Address.\-key\-\_\-name}}\label{classcore_1_1models_1_1Address_a5ebbca47356580cd05088f58d24d025c}
+\hypertarget{classcore_1_1models_1_1Address_abafe62dc9d25c167398a989a22caee51}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!last\-\_\-name@{last\-\_\-name}}
+\index{last\-\_\-name@{last\-\_\-name}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{last\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}tuple core.\-models.\-Address.\-last\-\_\-name = dmodels.\-Char\-Field(max\-\_\-length=255, null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Address_abafe62dc9d25c167398a989a22caee51}
+\hypertarget{classcore_1_1models_1_1Address_affbd91eecd5cf5488103ea1efc16100d}{\index{core\-::models\-::\-Address@{core\-::models\-::\-Address}!postcode@{postcode}}
+\index{postcode@{postcode}!core::models::Address@{core\-::models\-::\-Address}}
+\subsubsection[{postcode}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Address.\-postcode = dmodels.\-Char\-Field(max\-\_\-length=64)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Address_affbd91eecd5cf5488103ea1efc16100d}
+
+
+\hyperlink{classcore_1_1models_1_1Address}{Address} postcode. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/wepo/core/\hyperlink{models_8py}{models.\-py}\end{DoxyCompactItemize}

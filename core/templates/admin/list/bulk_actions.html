@@ -1,0 +1,18 @@
+<div class="toolbar btn-toolbar bulk-actions">
+
+   {% for bulk_action in bulk_actions %}
+      <div class="btn-group">
+         {% if bulk_action.dropdown %}
+            <span class="btn dropdown-toggle" data-toggle="dropdown"><i class="icol-{{ bulk_action.icon }}"></i> {{ bulk_action.name }} <span class="caret"></span></span>
+            <ul class="dropdown-menu">
+               {% for menu_item in bulk_action.items %}
+                  <li><a href="#" data-action="{{ menu_item.type }}">{{ menu_item.name }}</a></li>
+               {% endfor %}
+            </ul>
+         {% else %}
+            <span class="btn btn-action" data-action="{{ bulk_action.type }}"><i class="icol-{{ bulk_action.icon }}"></i>{{ bulk_action.name }}</span>
+         {% endif %}
+      </div>
+   {% endfor %}
+
+</div>

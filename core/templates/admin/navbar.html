@@ -1,0 +1,36 @@
+<div class="top-navbar header b-b">
+   <a data-original-title="Toggle navigation" class="toggle-side-nav pull-left" href="#">
+      <i class="icon-reorder"></i>
+   </a>
+
+   <div class="brand pull-left">
+      <a href="index.html">
+         <img src="/assets/admin/images/logo.png" width="147" height="33" />
+      </a>
+   </div>
+
+   <ul class="nav navbar-nav navbar-right  hidden-xs">
+      <li class="dropdown">
+         <a data-toggle="dropdown" class="" href="#">
+            <i class="icon-flag"></i> {{ active_language }}
+         </a>
+         <ul class="dropdown-menu extended notification">
+            {% for language in languages %}
+            <li>
+               <a href="/user/enable/language/{{ language.code }}?destination={{ destination }}">
+                  <span class="label label-{% if language.code == active_language %}success{% else %}warning{% endif %}">{{ language.code }}</span> <span class="message">{{ language.name }}</span>
+               </a>
+            </li>
+            {% endfor %}
+         </ul>
+      </li>
+
+      <li class="dropdown user  hidden-xs"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <i class="icon-male"></i> <span class="username">{{ user }}</span> <i class="icon-caret-down small"></i> </a>
+         <ul class="dropdown-menu">
+            <li><a href="/admin/object/edit/user/me.html"><i class="icon-user"></i>My Profile</a></li>
+            <li><a href="{{ logout_link }}"><i class="icon-key"></i> Log Out</a></li>
+         </ul>
+      </li>
+    </ul>
+
+</div>

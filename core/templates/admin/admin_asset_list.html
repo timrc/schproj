@@ -1,0 +1,29 @@
+<div id="page-asset-list" class="span10 widget">
+   <div class="widget-header">
+      <span class="title"><i class="icos-address-book"></i>Assets - {{ type }}</span>
+      <div class="toolbar">
+         <div class="btn-group">
+            <span class="btn close-widget"><i class="icol-cross"></i></span>
+         </div>
+      </div>
+   </div>
+   <div class="widget-content no-padding">
+      <ul id="contacts">
+
+      <li data-group="{{ type }}">
+         <a class="title">{{ type|title }}</a>
+         <ul>
+         {% for asset in assets %}
+            <li data-asset="{{ asset.key_name }}" data-asset-type="{{ type }}" data-asset-name="{{ asset.name }}">
+               <a href="#" class="select-asset">
+                   <span class="thumbnail"><img src="/assets/sample/p7.jpg"></span>{{ asset.name }}
+                   <span style="font-size: 11px; display: block;" class="muted">Code: {{ asset.code }}</span>
+               </a>
+            </li>
+         {% endfor %}
+         </ul>
+      </li>
+
+      </ul>
+   </div>
+</div>

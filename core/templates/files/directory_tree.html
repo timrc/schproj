@@ -1,0 +1,28 @@
+<div class="buttons pull-left">
+   <a href="#" class="btn btn-icon add-new-folder-toggle glyphicons down_arrow"><i></i> New folder</a>
+
+   <a href="#" class="btn btn-icon btn-primary save-directories glyphicons circle_ok"><i></i> Save</a>
+</div>
+<div style="clear:both;"></div>
+
+<div class="new_directory_container">
+   <hr class="separator">
+   <div style="clear:both;"></div>
+
+   {{ new_directory_input }}
+   <div class="buttons pull-left">
+      <a href="#" class="btn btn-primary btn-icon new_directory_button"><i></i> Add</a>
+   </div>
+</div>
+
+<div style="clear:both;"></div>
+<hr class="separator">
+<div style="clear:both;"></div>
+
+<ol class="sortable root">
+   {% with 'files/directory_tree_level.html' as filename %}
+   {% with directories as childs %}
+      {% include filename %}
+   {% endwith %}
+   {% endwith %}
+</ol>

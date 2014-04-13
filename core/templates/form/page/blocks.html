@@ -1,0 +1,42 @@
+{% load core_tags %}
+{% load core_filters %}
+{% autoescape off %}
+
+{% for part in config %}
+   <div class="row-fluid">
+
+      {% for section_name in part.elements %}
+      <div class="relativeWrap span{{ part.elements|divide_list_size_from:12 }}">
+         <div class="widget widget-gray widget-gray-white">
+            <div class="widget-head">
+               <h4 class="heading">{{ section_name|title }}</h4>
+               <button type="button" class="close close-sm add_block_link" data-section="{{ section_name }}"> <i class="icon-plus"></i> </button>
+            </div>
+            <div class="widget-body">
+               <ul class="sortable section-{{ section_name }}" style="min-height:83px;">
+
+                  {% sections section_name from page as sections %}
+                     {% for section in sections %}
+                        <li class="page-block-item btn-{% if section.enabled %}success{% else %}danger{% endif %} btn-lg btn-block" style="margin-left:0px;" data-block-path="{{ section.path }}">
+                           <strong>{{ section.name }}</strong>
+                           <span class="actions">
+                              <a href="#" class="block-edit"><i></i> Edit</a> |
+                              <a href="#" class="block-delete"><i></i> Delete</a> |
+                              <a href="#" class="block-toggle"><i></i> Disable</a>
+                           </span>
+                        </li>
+                     {% endfor %}
+                  {% endsections %}
+
+               </ul>
+               <div style="clear:both;"></div>
+            </div>
+         </div>
+      </div>
+      {% endfor %}
+
+   </div>
+{% endfor %}
+
+{{ input }}
+{% endautoescape %}

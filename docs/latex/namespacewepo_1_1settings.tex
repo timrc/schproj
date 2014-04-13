@@ -1,0 +1,427 @@
+\hypertarget{namespacewepo_1_1settings}{\section{wepo.\-settings Namespace Reference}
+\label{namespacewepo_1_1settings}\index{wepo.\-settings@{wepo.\-settings}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacewepo_1_1settings_afe30a5558df09d1195f567c20585d733}{P\-R\-O\-J\-E\-C\-T\-\_\-\-R\-O\-O\-T} = os.\-path.\-abspath('.')
+\item 
+list \hyperlink{namespacewepo_1_1settings_a74d020979efd117e8d7ae92a0e025ea5}{W\-E\-P\-O\-\_\-\-A\-P\-P\-S} = \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Wepo apps List all installed apps here. \end{DoxyCompactList}\item 
+\hyperlink{namespacewepo_1_1settings_a892de685064f9fb7550c2f85f84f2992}{D\-E\-B\-U\-G} = True
+\begin{DoxyCompactList}\small\item\em Debug settings. \end{DoxyCompactList}\item 
+\hyperlink{namespacewepo_1_1settings_ae5c23c654f8de88bf5400722dfe27159}{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T} = False
+\item 
+\hyperlink{namespacewepo_1_1settings_a0f6674bef75273821f06faa219b29eeb}{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-E\-B\-U\-G} = \hyperlink{namespacewepo_1_1settings_a892de685064f9fb7550c2f85f84f2992}{D\-E\-B\-U\-G}
+\item 
+tuple \hyperlink{namespacewepo_1_1settings_a06724aae9ad20b264f7cd38d9382223d}{A\-D\-M\-I\-N\-S}
+\begin{DoxyCompactList}\small\item\em Default Admins -\/ Not in used. \end{DoxyCompactList}\item 
+\hyperlink{namespacewepo_1_1settings_a65ccd124bb58f3ba4051c72c6f91a2e2}{M\-A\-N\-A\-G\-E\-R\-S} = \hyperlink{namespacewepo_1_1settings_a06724aae9ad20b264f7cd38d9382223d}{A\-D\-M\-I\-N\-S}
+\item 
+dictionary \hyperlink{namespacewepo_1_1settings_a7c1f9a17ae1a4cfa095e42b10e071f82}{D\-A\-T\-A\-B\-A\-S\-E\-S}
+\begin{DoxyCompactList}\small\item\em Database default settings; may be overriden in \hyperlink{settings__local_8py}{settings\-\_\-local.\-py} E\-N\-G\-I\-N\-E\-: Add 'postgresql\-\_\-psycopg2', 'mysql', 'sqlite3' or 'oracle'. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_abf6070aa707faad2afddfb65cc6884a7}{T\-I\-M\-E\-\_\-\-Z\-O\-N\-E} = 'Europe/Ljubljana'
+\begin{DoxyCompactList}\small\item\em Local time zone for this installation. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_a770ad9d20008a67ec0b4bdb522011c44}{L\-A\-N\-G\-U\-A\-G\-E\-\_\-\-C\-O\-D\-E} = 'en-\/us'
+\begin{DoxyCompactList}\small\item\em Language code for this installation. \end{DoxyCompactList}\item 
+list \hyperlink{namespacewepo_1_1settings_aad7d150719ceae447cdd1e7fbfd41731}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-C\-A\-L\-E\-S}
+\begin{DoxyCompactList}\small\item\em Default uploaded image scales. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_a536223da98afe60beb0a6ea3194889ce}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E} = 'en'
+\begin{DoxyCompactList}\small\item\em Default language -\/ Not in use. \end{DoxyCompactList}\item 
+int \hyperlink{namespacewepo_1_1settings_ab614d9076e4b5c83effad84ceb10f752}{S\-I\-T\-E\-\_\-\-I\-D} = 1
+\begin{DoxyCompactList}\small\item\em Site id -\/ Not in use. \end{DoxyCompactList}\item 
+\hyperlink{namespacewepo_1_1settings_a5f014d097a8a6dc725e7437b20342ef6}{U\-S\-E\-\_\-\-I18\-N} = True
+\begin{DoxyCompactList}\small\item\em If you set this to False, Django will make some optimizations so as not to load the internationalization machinery. \end{DoxyCompactList}\item 
+\hyperlink{namespacewepo_1_1settings_a397833200b8371e543b3320b2ff94536}{U\-S\-E\-\_\-\-L10\-N} = True
+\begin{DoxyCompactList}\small\item\em If you set this to False, Django will not format dates, numbers and calendars according to the current locale. \end{DoxyCompactList}\item 
+\hyperlink{namespacewepo_1_1settings_afbf0f0ae28ca43f39ae949a6e1cc61e9}{U\-S\-E\-\_\-\-T\-Z} = False
+\begin{DoxyCompactList}\small\item\em If you set this to False, Django will not use timezone-\/aware datetimes. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_aebf1042bc00e28af6a9d930633df0074}{M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T} = os.\-path.\-join(os.\-path.\-abspath('.'), 'upload/')
+\begin{DoxyCompactList}\small\item\em Absolute filesystem path to the directory that will hold user-\/uploaded files. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_a1b1c9434ae3bae0fbf31d4b5da6fed8e}{M\-E\-D\-I\-A\-\_\-\-U\-R\-L} = '/upload/'
+\begin{DoxyCompactList}\small\item\em U\-R\-L that handles the media served from M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_a0283b3df49c3c6b7121437d5ad176d98}{S\-T\-A\-T\-I\-C\-\_\-\-R\-O\-O\-T} = os.\-path.\-join(os.\-path.\-abspath('.'), 'assets/')
+\begin{DoxyCompactList}\small\item\em Absolute path to the directory static files should be collected to. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_ad112fb1bf0c5dd90bf992a1b5fef807c}{S\-T\-A\-T\-I\-C\-\_\-\-U\-R\-L} = '/assets/'
+\begin{DoxyCompactList}\small\item\em U\-R\-L prefix for static files. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_a8104d031743dffd8e96120c9a41cbcbd}{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-D\-I\-R\-S} = ()
+\begin{DoxyCompactList}\small\item\em Additional locations of static file Put strings here, like \char`\"{}/home/html/static\char`\"{} or \char`\"{}\-C\-:/www/django/static\char`\"{}. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_adba3f172a0e5080586dc8a88f1918290}{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-F\-I\-N\-D\-E\-R\-S}
+\begin{DoxyCompactList}\small\item\em List of finder classes that know how to find static files in various locations. \end{DoxyCompactList}\item 
+dictionary \hyperlink{namespacewepo_1_1settings_a153ec0e290d7467e4de29f825a3dbe81}{C\-A\-C\-H\-E\-S}
+\begin{DoxyCompactList}\small\item\em Cache in use C\-A\-C\-H\-E\-\_\-\-B\-A\-C\-K\-E\-N\-D = 'memcached\-://127.0.\-0.\-1\-:11211/'. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_a7c38ded18bd50ffa02f5cb2d6f3e2cee}{J\-O\-H\-N\-N\-Y\-\_\-\-M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-K\-E\-Y\-\_\-\-P\-R\-E\-F\-I\-X} = 'wepo'
+\item 
+string \hyperlink{namespacewepo_1_1settings_aff76d22872cecda4226a3ae6fe520bbd}{S\-E\-S\-S\-I\-O\-N\-\_\-\-C\-A\-C\-H\-E\-\_\-\-A\-L\-I\-A\-S} = 'memcached'
+\begin{DoxyCompactList}\small\item\em Session manager. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_a6072380d2a207c0a2973b979bffd01e9}{S\-E\-S\-S\-I\-O\-N\-\_\-\-E\-N\-G\-I\-N\-E} = 'django.\-contrib.\-sessions.\-backends.\-cached\-\_\-db'
+\item 
+string \hyperlink{namespacewepo_1_1settings_a461b9adbf4543b4d1b51c833cd0612d3}{S\-E\-C\-R\-E\-T\-\_\-\-K\-E\-Y} = '-\/4igw\#l4\%nlkoab1\#d\&amp;1a\$\-\_\-@ksk8e70a\%$\ast$m6re+uu@-\/(7u\%t72'
+\begin{DoxyCompactList}\small\item\em Make this unique, and don't share it with anybody. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_a9077964357f8bc248cd25fd1565c681d}{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-L\-O\-A\-D\-E\-R\-S}
+\begin{DoxyCompactList}\small\item\em List of callables that know how to import templates from various sources. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_aff501e73353b60e2ccf464b01e342bc7}{M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-C\-L\-A\-S\-S\-E\-S}
+\begin{DoxyCompactList}\small\item\em Installed middleware from contrib or others. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_aa72b0a269f252e5fd99fd29f6fa09db0}{A\-P\-P\-S\-\_\-\-D\-I\-R} = 'apps'
+\begin{DoxyCompactList}\small\item\em Default apps dir -\/ Do not change this, it's a static location of installed applications. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_ab1e513db5bb04f174572009893ecc447}{R\-O\-O\-T\-\_\-\-U\-R\-L\-C\-O\-N\-F} = 'wepo.\-urls'
+\begin{DoxyCompactList}\small\item\em Path to the root url config. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings_aaa11b47894bdc61fd4ecfb02a1aeb72c}{W\-S\-G\-I\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N} = '\hyperlink{namespacewepo_1_1wsgi_aecec5f351e7bfcfba14194127f1ee8d3}{wepo.\-wsgi.\-application}'
+\begin{DoxyCompactList}\small\item\em Python dotted path to the W\-S\-G\-I application used by Django's runserver. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_a12c49fe52d22d2119e0d8e8c687f9189}{H\-O\-O\-K\-\_\-\-D\-I\-R} = os.\-path.\-join(os.\-path.\-abspath('.'), 'overrides')
+\begin{DoxyCompactList}\small\item\em Hook directory -\/ No in use  -\/ Remove 'hook' directory variable after... \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_a4cd3f2ad4c57d4a726db437cccd99a71}{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-I\-R\-S}
+\begin{DoxyCompactList}\small\item\em Where the templates are located -\/ Not in use Put strings here, like \char`\"{}/home/html/django\-\_\-templates\char`\"{} or \char`\"{}\-C\-:/www/django/templates\char`\"{}. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_a49bfa96e1114ba66198ffce7c1de2c4a}{F\-I\-X\-T\-U\-R\-E\-\_\-\-D\-I\-R\-S} = ()
+\begin{DoxyCompactList}\small\item\em Fixture directory for installing basic data into database -\/ Not in use. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacewepo_1_1settings_afe5c150c28fa0af812216ed9dfc613fe}{I\-N\-S\-T\-A\-L\-L\-E\-D\-\_\-\-A\-P\-P\-S}
+\begin{DoxyCompactList}\small\item\em List of installed applications. \end{DoxyCompactList}\item 
+dictionary \hyperlink{namespacewepo_1_1settings_a256be23609f64ad17ec9446d46007d8e}{L\-O\-G\-G\-I\-N\-G}
+\begin{DoxyCompactList}\small\item\em A sample logging configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacewepo_1_1settings_a06724aae9ad20b264f7cd38d9382223d}{\index{wepo\-::settings@{wepo\-::settings}!A\-D\-M\-I\-N\-S@{A\-D\-M\-I\-N\-S}}
+\index{A\-D\-M\-I\-N\-S@{A\-D\-M\-I\-N\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{A\-D\-M\-I\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-A\-D\-M\-I\-N\-S}}\label{namespacewepo_1_1settings_a06724aae9ad20b264f7cd38d9382223d}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = (
+2    \textcolor{comment}{# ('Tim Rijavec', 'tim@coder.si'),}
+3 )
+\end{DoxyCode}
+
+
+Default Admins -\/ Not in used. 
+
+\hypertarget{namespacewepo_1_1settings_aa72b0a269f252e5fd99fd29f6fa09db0}{\index{wepo\-::settings@{wepo\-::settings}!A\-P\-P\-S\-\_\-\-D\-I\-R@{A\-P\-P\-S\-\_\-\-D\-I\-R}}
+\index{A\-P\-P\-S\-\_\-\-D\-I\-R@{A\-P\-P\-S\-\_\-\-D\-I\-R}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{A\-P\-P\-S\-\_\-\-D\-I\-R}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-A\-P\-P\-S\-\_\-\-D\-I\-R = 'apps'}}\label{namespacewepo_1_1settings_aa72b0a269f252e5fd99fd29f6fa09db0}
+
+
+Default apps dir -\/ Do not change this, it's a static location of installed applications. 
+
+\hypertarget{namespacewepo_1_1settings_a153ec0e290d7467e4de29f825a3dbe81}{\index{wepo\-::settings@{wepo\-::settings}!C\-A\-C\-H\-E\-S@{C\-A\-C\-H\-E\-S}}
+\index{C\-A\-C\-H\-E\-S@{C\-A\-C\-H\-E\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{C\-A\-C\-H\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}dictionary wepo.\-settings.\-C\-A\-C\-H\-E\-S}}\label{namespacewepo_1_1settings_a153ec0e290d7467e4de29f825a3dbe81}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \{
+2    \textcolor{stringliteral}{'default'} : dict(
+3       BACKEND = \textcolor{stringliteral}{'johnny.backends.memcached.MemcachedCache'},
+4       LOCATION = [\textcolor{stringliteral}{'127.0.0.1:11211'}, ],
+5       JOHNNY\_CACHE = \textcolor{keyword}{True},
+6    ),
+7 \}
+\end{DoxyCode}
+
+
+Cache in use C\-A\-C\-H\-E\-\_\-\-B\-A\-C\-K\-E\-N\-D = 'memcached\-://127.0.\-0.\-1\-:11211/'. 
+
+\hypertarget{namespacewepo_1_1settings_a7c1f9a17ae1a4cfa095e42b10e071f82}{\index{wepo\-::settings@{wepo\-::settings}!D\-A\-T\-A\-B\-A\-S\-E\-S@{D\-A\-T\-A\-B\-A\-S\-E\-S}}
+\index{D\-A\-T\-A\-B\-A\-S\-E\-S@{D\-A\-T\-A\-B\-A\-S\-E\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{D\-A\-T\-A\-B\-A\-S\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}dictionary wepo.\-settings.\-D\-A\-T\-A\-B\-A\-S\-E\-S}}\label{namespacewepo_1_1settings_a7c1f9a17ae1a4cfa095e42b10e071f82}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \{
+2    \textcolor{stringliteral}{'default'}: \{
+3       \textcolor{stringliteral}{'ENGINE'}:   \textcolor{stringliteral}{'django.db.backends.mysql'},
+4       \textcolor{stringliteral}{'NAME'}:     \textcolor{stringliteral}{'wepo'},
+5       \textcolor{stringliteral}{'USER'}:     \textcolor{stringliteral}{'root'},
+6       \textcolor{stringliteral}{'PASSWORD'}: \textcolor{stringliteral}{''},
+7       \textcolor{stringliteral}{'HOST'}:     \textcolor{stringliteral}{'/opt/dlamp/mysql/tmp/mysql.sock'},
+8       \textcolor{stringliteral}{'PORT'}:     \textcolor{stringliteral}{'3306'},
+9    \}
+10 \}
+\end{DoxyCode}
+
+
+Database default settings; may be overriden in \hyperlink{settings__local_8py}{settings\-\_\-local.\-py} E\-N\-G\-I\-N\-E\-: Add 'postgresql\-\_\-psycopg2', 'mysql', 'sqlite3' or 'oracle'. 
+
+N\-A\-M\-E\-: Or path to database file if using sqlite3. U\-S\-E\-R\-: Not used with sqlite3. P\-A\-S\-S\-W\-O\-R\-D\-: Not used with sqlite3. H\-O\-S\-T\-: Set to empty string for localhost. Not used with sqlite3. P\-O\-R\-T\-: Set to empty string for default. Not used with sqlite3. \hypertarget{namespacewepo_1_1settings_a892de685064f9fb7550c2f85f84f2992}{\index{wepo\-::settings@{wepo\-::settings}!D\-E\-B\-U\-G@{D\-E\-B\-U\-G}}
+\index{D\-E\-B\-U\-G@{D\-E\-B\-U\-G}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}wepo.\-settings.\-D\-E\-B\-U\-G = True}}\label{namespacewepo_1_1settings_a892de685064f9fb7550c2f85f84f2992}
+
+
+Debug settings. 
+
+\hypertarget{namespacewepo_1_1settings_aad7d150719ceae447cdd1e7fbfd41731}{\index{wepo\-::settings@{wepo\-::settings}!D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-C\-A\-L\-E\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-C\-A\-L\-E\-S}}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-C\-A\-L\-E\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-C\-A\-L\-E\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-C\-A\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}list wepo.\-settings.\-D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-C\-A\-L\-E\-S}}\label{namespacewepo_1_1settings_aad7d150719ceae447cdd1e7fbfd41731}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = [
+2    dict(name=\textcolor{stringliteral}{'Thumbnail square'}, prefix=\textcolor{stringliteral}{'tmbs'}, width=100, height=100, crop=\textcolor{keyword}{True}),
+3    dict(name=\textcolor{stringliteral}{'Thumbnail rectangle'}, prefix=\textcolor{stringliteral}{'tmbr'}, width=100, height=60, crop=\textcolor{keyword}{True}),
+4    dict(name=\textcolor{stringliteral}{'Preview small'}, prefix=\textcolor{stringliteral}{'prws'}, width=400, height=210, scale\_to\_fit=\textcolor{keyword}{True}),
+5    dict(name=\textcolor{stringliteral}{'Preview big'}, prefix=\textcolor{stringliteral}{'prwb'}, width=850, height=470, scale\_to\_fit=\textcolor{keyword}{True}),
+6 ]
+\end{DoxyCode}
+
+
+Default uploaded image scales. 
+
+\hypertarget{namespacewepo_1_1settings_a536223da98afe60beb0a6ea3194889ce}{\index{wepo\-::settings@{wepo\-::settings}!D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E}}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E = 'en'}}\label{namespacewepo_1_1settings_a536223da98afe60beb0a6ea3194889ce}
+
+
+Default language -\/ Not in use. 
+
+\hypertarget{namespacewepo_1_1settings_ae5c23c654f8de88bf5400722dfe27159}{\index{wepo\-::settings@{wepo\-::settings}!D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T@{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T}}
+\index{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T@{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}wepo.\-settings.\-D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T = False}}\label{namespacewepo_1_1settings_ae5c23c654f8de88bf5400722dfe27159}
+\hypertarget{namespacewepo_1_1settings_a49bfa96e1114ba66198ffce7c1de2c4a}{\index{wepo\-::settings@{wepo\-::settings}!F\-I\-X\-T\-U\-R\-E\-\_\-\-D\-I\-R\-S@{F\-I\-X\-T\-U\-R\-E\-\_\-\-D\-I\-R\-S}}
+\index{F\-I\-X\-T\-U\-R\-E\-\_\-\-D\-I\-R\-S@{F\-I\-X\-T\-U\-R\-E\-\_\-\-D\-I\-R\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{F\-I\-X\-T\-U\-R\-E\-\_\-\-D\-I\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-F\-I\-X\-T\-U\-R\-E\-\_\-\-D\-I\-R\-S = ()}}\label{namespacewepo_1_1settings_a49bfa96e1114ba66198ffce7c1de2c4a}
+
+
+Fixture directory for installing basic data into database -\/ Not in use. 
+
+\hypertarget{namespacewepo_1_1settings_a12c49fe52d22d2119e0d8e8c687f9189}{\index{wepo\-::settings@{wepo\-::settings}!H\-O\-O\-K\-\_\-\-D\-I\-R@{H\-O\-O\-K\-\_\-\-D\-I\-R}}
+\index{H\-O\-O\-K\-\_\-\-D\-I\-R@{H\-O\-O\-K\-\_\-\-D\-I\-R}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{H\-O\-O\-K\-\_\-\-D\-I\-R}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-H\-O\-O\-K\-\_\-\-D\-I\-R = os.\-path.\-join(os.\-path.\-abspath('.'), 'overrides')}}\label{namespacewepo_1_1settings_a12c49fe52d22d2119e0d8e8c687f9189}
+
+
+Hook directory -\/ No in use  -\/ Remove 'hook' directory variable after... 
+
+\hypertarget{namespacewepo_1_1settings_afe5c150c28fa0af812216ed9dfc613fe}{\index{wepo\-::settings@{wepo\-::settings}!I\-N\-S\-T\-A\-L\-L\-E\-D\-\_\-\-A\-P\-P\-S@{I\-N\-S\-T\-A\-L\-L\-E\-D\-\_\-\-A\-P\-P\-S}}
+\index{I\-N\-S\-T\-A\-L\-L\-E\-D\-\_\-\-A\-P\-P\-S@{I\-N\-S\-T\-A\-L\-L\-E\-D\-\_\-\-A\-P\-P\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{I\-N\-S\-T\-A\-L\-L\-E\-D\-\_\-\-A\-P\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-I\-N\-S\-T\-A\-L\-L\-E\-D\-\_\-\-A\-P\-P\-S}}\label{namespacewepo_1_1settings_afe5c150c28fa0af812216ed9dfc613fe}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = (
+2    \textcolor{stringliteral}{'django.contrib.sessions'},
+3    \textcolor{stringliteral}{'django.contrib.staticfiles'},
+4    \textcolor{stringliteral}{'django.contrib.messages'},
+5 )
+\end{DoxyCode}
+
+
+List of installed applications. 
+
+\hypertarget{namespacewepo_1_1settings_a7c38ded18bd50ffa02f5cb2d6f3e2cee}{\index{wepo\-::settings@{wepo\-::settings}!J\-O\-H\-N\-N\-Y\-\_\-\-M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-K\-E\-Y\-\_\-\-P\-R\-E\-F\-I\-X@{J\-O\-H\-N\-N\-Y\-\_\-\-M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-K\-E\-Y\-\_\-\-P\-R\-E\-F\-I\-X}}
+\index{J\-O\-H\-N\-N\-Y\-\_\-\-M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-K\-E\-Y\-\_\-\-P\-R\-E\-F\-I\-X@{J\-O\-H\-N\-N\-Y\-\_\-\-M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-K\-E\-Y\-\_\-\-P\-R\-E\-F\-I\-X}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{J\-O\-H\-N\-N\-Y\-\_\-\-M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-K\-E\-Y\-\_\-\-P\-R\-E\-F\-I\-X}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-J\-O\-H\-N\-N\-Y\-\_\-\-M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-K\-E\-Y\-\_\-\-P\-R\-E\-F\-I\-X = 'wepo'}}\label{namespacewepo_1_1settings_a7c38ded18bd50ffa02f5cb2d6f3e2cee}
+\hypertarget{namespacewepo_1_1settings_a770ad9d20008a67ec0b4bdb522011c44}{\index{wepo\-::settings@{wepo\-::settings}!L\-A\-N\-G\-U\-A\-G\-E\-\_\-\-C\-O\-D\-E@{L\-A\-N\-G\-U\-A\-G\-E\-\_\-\-C\-O\-D\-E}}
+\index{L\-A\-N\-G\-U\-A\-G\-E\-\_\-\-C\-O\-D\-E@{L\-A\-N\-G\-U\-A\-G\-E\-\_\-\-C\-O\-D\-E}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{L\-A\-N\-G\-U\-A\-G\-E\-\_\-\-C\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-L\-A\-N\-G\-U\-A\-G\-E\-\_\-\-C\-O\-D\-E = 'en-\/us'}}\label{namespacewepo_1_1settings_a770ad9d20008a67ec0b4bdb522011c44}
+
+
+Language code for this installation. 
+
+All choices can be found here\-: \href{http://www.i18nguy.com/unicode/language-identifiers.html}{\tt http\-://www.\-i18nguy.\-com/unicode/language-\/identifiers.\-html} \hypertarget{namespacewepo_1_1settings_a256be23609f64ad17ec9446d46007d8e}{\index{wepo\-::settings@{wepo\-::settings}!L\-O\-G\-G\-I\-N\-G@{L\-O\-G\-G\-I\-N\-G}}
+\index{L\-O\-G\-G\-I\-N\-G@{L\-O\-G\-G\-I\-N\-G}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{L\-O\-G\-G\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}dictionary wepo.\-settings.\-L\-O\-G\-G\-I\-N\-G}}\label{namespacewepo_1_1settings_a256be23609f64ad17ec9446d46007d8e}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \{
+2    \textcolor{stringliteral}{'version'}: 1,
+3    \textcolor{stringliteral}{'disable\_existing\_loggers'}: \textcolor{keyword}{False},
+4    \textcolor{stringliteral}{'filters'}: \{
+5       \textcolor{stringliteral}{'require\_debug\_false'}: \{
+6          \textcolor{stringliteral}{'()'}: \textcolor{stringliteral}{'django.utils.log.RequireDebugFalse'}
+7       \}
+8    \},
+9    \textcolor{stringliteral}{'handlers'}: \{
+10       \textcolor{stringliteral}{'mail\_admins'}: \{
+11          \textcolor{stringliteral}{'level'}: \textcolor{stringliteral}{'ERROR'},
+12          \textcolor{stringliteral}{'filters'}: [\textcolor{stringliteral}{'require\_debug\_false'}],
+13          \textcolor{stringliteral}{'class'}: \textcolor{stringliteral}{'django.utils.log.AdminEmailHandler'}
+14       \}
+15    \},
+16    \textcolor{stringliteral}{'loggers'}: \{
+17       \textcolor{stringliteral}{'django.request'}: \{
+18          \textcolor{stringliteral}{'handlers'}: [\textcolor{stringliteral}{'mail\_admins'}],
+19          \textcolor{stringliteral}{'level'}: \textcolor{stringliteral}{'ERROR'},
+20          \textcolor{stringliteral}{'propagate'}: \textcolor{keyword}{True},
+21       \},
+22    \}
+23 \}
+\end{DoxyCode}
+
+
+A sample logging configuration. 
+
+The only tangible logging performed by this configuration is to send an email to the site admins on every H\-T\-T\-P 500 error when D\-E\-B\-U\-G=False. See \href{http://docs.djangoproject.com/en/dev/topics/logging}{\tt http\-://docs.\-djangoproject.\-com/en/dev/topics/logging} for more details on how to customize your logging configuration. \hypertarget{namespacewepo_1_1settings_a65ccd124bb58f3ba4051c72c6f91a2e2}{\index{wepo\-::settings@{wepo\-::settings}!M\-A\-N\-A\-G\-E\-R\-S@{M\-A\-N\-A\-G\-E\-R\-S}}
+\index{M\-A\-N\-A\-G\-E\-R\-S@{M\-A\-N\-A\-G\-E\-R\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{M\-A\-N\-A\-G\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}wepo.\-settings.\-M\-A\-N\-A\-G\-E\-R\-S = {\bf A\-D\-M\-I\-N\-S}}}\label{namespacewepo_1_1settings_a65ccd124bb58f3ba4051c72c6f91a2e2}
+\hypertarget{namespacewepo_1_1settings_aebf1042bc00e28af6a9d930633df0074}{\index{wepo\-::settings@{wepo\-::settings}!M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T@{M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T}}
+\index{M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T@{M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T = os.\-path.\-join(os.\-path.\-abspath('.'), 'upload/')}}\label{namespacewepo_1_1settings_aebf1042bc00e28af6a9d930633df0074}
+
+
+Absolute filesystem path to the directory that will hold user-\/uploaded files. 
+
+Example\-: \char`\"{}/home/media/media.\-lawrence.\-com/media/\char`\"{} \hypertarget{namespacewepo_1_1settings_a1b1c9434ae3bae0fbf31d4b5da6fed8e}{\index{wepo\-::settings@{wepo\-::settings}!M\-E\-D\-I\-A\-\_\-\-U\-R\-L@{M\-E\-D\-I\-A\-\_\-\-U\-R\-L}}
+\index{M\-E\-D\-I\-A\-\_\-\-U\-R\-L@{M\-E\-D\-I\-A\-\_\-\-U\-R\-L}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{M\-E\-D\-I\-A\-\_\-\-U\-R\-L}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-M\-E\-D\-I\-A\-\_\-\-U\-R\-L = '/upload/'}}\label{namespacewepo_1_1settings_a1b1c9434ae3bae0fbf31d4b5da6fed8e}
+
+
+U\-R\-L that handles the media served from M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T. 
+
+Make sure to use a trailing slash. Examples\-: \char`\"{}http\-://media.\-lawrence.\-com/media/\char`\"{}, \char`\"{}http\-://example.\-com/media/\char`\"{} \hypertarget{namespacewepo_1_1settings_aff501e73353b60e2ccf464b01e342bc7}{\index{wepo\-::settings@{wepo\-::settings}!M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-C\-L\-A\-S\-S\-E\-S@{M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-C\-L\-A\-S\-S\-E\-S}}
+\index{M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-C\-L\-A\-S\-S\-E\-S@{M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-C\-L\-A\-S\-S\-E\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-C\-L\-A\-S\-S\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-M\-I\-D\-D\-L\-E\-W\-A\-R\-E\-\_\-\-C\-L\-A\-S\-S\-E\-S}}\label{namespacewepo_1_1settings_aff501e73353b60e2ccf464b01e342bc7}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = (
+2    \textcolor{stringliteral}{'django.middleware.common.CommonMiddleware'},
+3    \textcolor{stringliteral}{'django.contrib.sessions.middleware.SessionMiddleware'},
+4    \textcolor{stringliteral}{'django.contrib.messages.middleware.MessageMiddleware'},
+5 
+6    \textcolor{stringliteral}{'core.middleware.GlobalRequest'},
+7 
+8    \textcolor{stringliteral}{'johnny.middleware.LocalStoreClearMiddleware'},
+9    \textcolor{stringliteral}{'johnny.middleware.QueryCacheMiddleware'},
+10 )
+\end{DoxyCode}
+
+
+Installed middleware from contrib or others. 
+
+\hypertarget{namespacewepo_1_1settings_afe30a5558df09d1195f567c20585d733}{\index{wepo\-::settings@{wepo\-::settings}!P\-R\-O\-J\-E\-C\-T\-\_\-\-R\-O\-O\-T@{P\-R\-O\-J\-E\-C\-T\-\_\-\-R\-O\-O\-T}}
+\index{P\-R\-O\-J\-E\-C\-T\-\_\-\-R\-O\-O\-T@{P\-R\-O\-J\-E\-C\-T\-\_\-\-R\-O\-O\-T}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{P\-R\-O\-J\-E\-C\-T\-\_\-\-R\-O\-O\-T}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-P\-R\-O\-J\-E\-C\-T\-\_\-\-R\-O\-O\-T = os.\-path.\-abspath('.')}}\label{namespacewepo_1_1settings_afe30a5558df09d1195f567c20585d733}
+\hypertarget{namespacewepo_1_1settings_ab1e513db5bb04f174572009893ecc447}{\index{wepo\-::settings@{wepo\-::settings}!R\-O\-O\-T\-\_\-\-U\-R\-L\-C\-O\-N\-F@{R\-O\-O\-T\-\_\-\-U\-R\-L\-C\-O\-N\-F}}
+\index{R\-O\-O\-T\-\_\-\-U\-R\-L\-C\-O\-N\-F@{R\-O\-O\-T\-\_\-\-U\-R\-L\-C\-O\-N\-F}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{R\-O\-O\-T\-\_\-\-U\-R\-L\-C\-O\-N\-F}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-R\-O\-O\-T\-\_\-\-U\-R\-L\-C\-O\-N\-F = 'wepo.\-urls'}}\label{namespacewepo_1_1settings_ab1e513db5bb04f174572009893ecc447}
+
+
+Path to the root url config. 
+
+\hypertarget{namespacewepo_1_1settings_a461b9adbf4543b4d1b51c833cd0612d3}{\index{wepo\-::settings@{wepo\-::settings}!S\-E\-C\-R\-E\-T\-\_\-\-K\-E\-Y@{S\-E\-C\-R\-E\-T\-\_\-\-K\-E\-Y}}
+\index{S\-E\-C\-R\-E\-T\-\_\-\-K\-E\-Y@{S\-E\-C\-R\-E\-T\-\_\-\-K\-E\-Y}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{S\-E\-C\-R\-E\-T\-\_\-\-K\-E\-Y}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-S\-E\-C\-R\-E\-T\-\_\-\-K\-E\-Y = '-\/4igw\#l4\%nlkoab1\#d\&amp;1a\$\-\_\-@ksk8e70a\%$\ast$m6re+uu@-\/(7u\%t72'}}\label{namespacewepo_1_1settings_a461b9adbf4543b4d1b51c833cd0612d3}
+
+
+Make this unique, and don't share it with anybody. 
+
+\hypertarget{namespacewepo_1_1settings_aff76d22872cecda4226a3ae6fe520bbd}{\index{wepo\-::settings@{wepo\-::settings}!S\-E\-S\-S\-I\-O\-N\-\_\-\-C\-A\-C\-H\-E\-\_\-\-A\-L\-I\-A\-S@{S\-E\-S\-S\-I\-O\-N\-\_\-\-C\-A\-C\-H\-E\-\_\-\-A\-L\-I\-A\-S}}
+\index{S\-E\-S\-S\-I\-O\-N\-\_\-\-C\-A\-C\-H\-E\-\_\-\-A\-L\-I\-A\-S@{S\-E\-S\-S\-I\-O\-N\-\_\-\-C\-A\-C\-H\-E\-\_\-\-A\-L\-I\-A\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{S\-E\-S\-S\-I\-O\-N\-\_\-\-C\-A\-C\-H\-E\-\_\-\-A\-L\-I\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-S\-E\-S\-S\-I\-O\-N\-\_\-\-C\-A\-C\-H\-E\-\_\-\-A\-L\-I\-A\-S = 'memcached'}}\label{namespacewepo_1_1settings_aff76d22872cecda4226a3ae6fe520bbd}
+
+
+Session manager. 
+
+\hypertarget{namespacewepo_1_1settings_a6072380d2a207c0a2973b979bffd01e9}{\index{wepo\-::settings@{wepo\-::settings}!S\-E\-S\-S\-I\-O\-N\-\_\-\-E\-N\-G\-I\-N\-E@{S\-E\-S\-S\-I\-O\-N\-\_\-\-E\-N\-G\-I\-N\-E}}
+\index{S\-E\-S\-S\-I\-O\-N\-\_\-\-E\-N\-G\-I\-N\-E@{S\-E\-S\-S\-I\-O\-N\-\_\-\-E\-N\-G\-I\-N\-E}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{S\-E\-S\-S\-I\-O\-N\-\_\-\-E\-N\-G\-I\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-S\-E\-S\-S\-I\-O\-N\-\_\-\-E\-N\-G\-I\-N\-E = 'django.\-contrib.\-sessions.\-backends.\-cached\-\_\-db'}}\label{namespacewepo_1_1settings_a6072380d2a207c0a2973b979bffd01e9}
+\hypertarget{namespacewepo_1_1settings_ab614d9076e4b5c83effad84ceb10f752}{\index{wepo\-::settings@{wepo\-::settings}!S\-I\-T\-E\-\_\-\-I\-D@{S\-I\-T\-E\-\_\-\-I\-D}}
+\index{S\-I\-T\-E\-\_\-\-I\-D@{S\-I\-T\-E\-\_\-\-I\-D}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{S\-I\-T\-E\-\_\-\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int wepo.\-settings.\-S\-I\-T\-E\-\_\-\-I\-D = 1}}\label{namespacewepo_1_1settings_ab614d9076e4b5c83effad84ceb10f752}
+
+
+Site id -\/ Not in use. 
+
+\hypertarget{namespacewepo_1_1settings_a0283b3df49c3c6b7121437d5ad176d98}{\index{wepo\-::settings@{wepo\-::settings}!S\-T\-A\-T\-I\-C\-\_\-\-R\-O\-O\-T@{S\-T\-A\-T\-I\-C\-\_\-\-R\-O\-O\-T}}
+\index{S\-T\-A\-T\-I\-C\-\_\-\-R\-O\-O\-T@{S\-T\-A\-T\-I\-C\-\_\-\-R\-O\-O\-T}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{S\-T\-A\-T\-I\-C\-\_\-\-R\-O\-O\-T}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-S\-T\-A\-T\-I\-C\-\_\-\-R\-O\-O\-T = os.\-path.\-join(os.\-path.\-abspath('.'), 'assets/')}}\label{namespacewepo_1_1settings_a0283b3df49c3c6b7121437d5ad176d98}
+
+
+Absolute path to the directory static files should be collected to. 
+
+Don't put anything in this directory yourself; store your static files in apps' \char`\"{}static/\char`\"{} subdirectories and in S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-D\-I\-R\-S. Example\-: \char`\"{}/home/media/media.\-lawrence.\-com/static/\char`\"{} \hypertarget{namespacewepo_1_1settings_ad112fb1bf0c5dd90bf992a1b5fef807c}{\index{wepo\-::settings@{wepo\-::settings}!S\-T\-A\-T\-I\-C\-\_\-\-U\-R\-L@{S\-T\-A\-T\-I\-C\-\_\-\-U\-R\-L}}
+\index{S\-T\-A\-T\-I\-C\-\_\-\-U\-R\-L@{S\-T\-A\-T\-I\-C\-\_\-\-U\-R\-L}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{S\-T\-A\-T\-I\-C\-\_\-\-U\-R\-L}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-S\-T\-A\-T\-I\-C\-\_\-\-U\-R\-L = '/assets/'}}\label{namespacewepo_1_1settings_ad112fb1bf0c5dd90bf992a1b5fef807c}
+
+
+U\-R\-L prefix for static files. 
+
+Example\-: \char`\"{}http\-://media.\-lawrence.\-com/static/\char`\"{} \hypertarget{namespacewepo_1_1settings_a8104d031743dffd8e96120c9a41cbcbd}{\index{wepo\-::settings@{wepo\-::settings}!S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-D\-I\-R\-S@{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-D\-I\-R\-S}}
+\index{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-D\-I\-R\-S@{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-D\-I\-R\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-D\-I\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-D\-I\-R\-S = ()}}\label{namespacewepo_1_1settings_a8104d031743dffd8e96120c9a41cbcbd}
+
+
+Additional locations of static file Put strings here, like \char`\"{}/home/html/static\char`\"{} or \char`\"{}\-C\-:/www/django/static\char`\"{}. 
+
+Static file directories.
+
+Always use forward slashes, even on Windows. Don't forget to use absolute paths, not relative paths. \hypertarget{namespacewepo_1_1settings_adba3f172a0e5080586dc8a88f1918290}{\index{wepo\-::settings@{wepo\-::settings}!S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-F\-I\-N\-D\-E\-R\-S@{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-F\-I\-N\-D\-E\-R\-S}}
+\index{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-F\-I\-N\-D\-E\-R\-S@{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-F\-I\-N\-D\-E\-R\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-F\-I\-N\-D\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-S\-T\-A\-T\-I\-C\-F\-I\-L\-E\-S\-\_\-\-F\-I\-N\-D\-E\-R\-S}}\label{namespacewepo_1_1settings_adba3f172a0e5080586dc8a88f1918290}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = (
+2    \textcolor{stringliteral}{'django.contrib.staticfiles.finders.FileSystemFinder'},
+3    \textcolor{stringliteral}{'django.contrib.staticfiles.finders.AppDirectoriesFinder'},
+4 )
+\end{DoxyCode}
+
+
+List of finder classes that know how to find static files in various locations. 
+
+\hypertarget{namespacewepo_1_1settings_a0f6674bef75273821f06faa219b29eeb}{\index{wepo\-::settings@{wepo\-::settings}!T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-E\-B\-U\-G@{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-E\-B\-U\-G}}
+\index{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-E\-B\-U\-G@{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-E\-B\-U\-G}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}wepo.\-settings.\-T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-E\-B\-U\-G = {\bf D\-E\-B\-U\-G}}}\label{namespacewepo_1_1settings_a0f6674bef75273821f06faa219b29eeb}
+\hypertarget{namespacewepo_1_1settings_a4cd3f2ad4c57d4a726db437cccd99a71}{\index{wepo\-::settings@{wepo\-::settings}!T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-I\-R\-S@{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-I\-R\-S}}
+\index{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-I\-R\-S@{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-I\-R\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-I\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-D\-I\-R\-S}}\label{namespacewepo_1_1settings_a4cd3f2ad4c57d4a726db437cccd99a71}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = (
+2    os.path.join(os.path.dirname(\_\_file\_\_), \textcolor{stringliteral}{'../layouts'}).replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)'},\textcolor{stringliteral}{'/'}),
+3 )
+\end{DoxyCode}
+
+
+Where the templates are located -\/ Not in use Put strings here, like \char`\"{}/home/html/django\-\_\-templates\char`\"{} or \char`\"{}\-C\-:/www/django/templates\char`\"{}. 
+
+Template directories.
+
+Always use forward slashes, even on Windows. Don't forget to use absolute paths, not relative paths. \hypertarget{namespacewepo_1_1settings_a9077964357f8bc248cd25fd1565c681d}{\index{wepo\-::settings@{wepo\-::settings}!T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-L\-O\-A\-D\-E\-R\-S@{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-L\-O\-A\-D\-E\-R\-S}}
+\index{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-L\-O\-A\-D\-E\-R\-S@{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-L\-O\-A\-D\-E\-R\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-L\-O\-A\-D\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}tuple wepo.\-settings.\-T\-E\-M\-P\-L\-A\-T\-E\-\_\-\-L\-O\-A\-D\-E\-R\-S}}\label{namespacewepo_1_1settings_a9077964357f8bc248cd25fd1565c681d}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = (
+2    \textcolor{stringliteral}{'django.template.loaders.filesystem.Loader'},
+3    \textcolor{stringliteral}{'django.template.loaders.app\_directories.Loader'},
+4 )
+\end{DoxyCode}
+
+
+List of callables that know how to import templates from various sources. 
+
+\hypertarget{namespacewepo_1_1settings_abf6070aa707faad2afddfb65cc6884a7}{\index{wepo\-::settings@{wepo\-::settings}!T\-I\-M\-E\-\_\-\-Z\-O\-N\-E@{T\-I\-M\-E\-\_\-\-Z\-O\-N\-E}}
+\index{T\-I\-M\-E\-\_\-\-Z\-O\-N\-E@{T\-I\-M\-E\-\_\-\-Z\-O\-N\-E}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{T\-I\-M\-E\-\_\-\-Z\-O\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-T\-I\-M\-E\-\_\-\-Z\-O\-N\-E = 'Europe/Ljubljana'}}\label{namespacewepo_1_1settings_abf6070aa707faad2afddfb65cc6884a7}
+
+
+Local time zone for this installation. 
+
+Choices can be found here\-: \href{http://en.wikipedia.org/wiki/List_of_tz_zones_by_name}{\tt http\-://en.\-wikipedia.\-org/wiki/\-List\-\_\-of\-\_\-tz\-\_\-zones\-\_\-by\-\_\-name} although not all choices may be available on all operating systems. In a Windows environment this must be set to your system time zone. \hypertarget{namespacewepo_1_1settings_a5f014d097a8a6dc725e7437b20342ef6}{\index{wepo\-::settings@{wepo\-::settings}!U\-S\-E\-\_\-\-I18\-N@{U\-S\-E\-\_\-\-I18\-N}}
+\index{U\-S\-E\-\_\-\-I18\-N@{U\-S\-E\-\_\-\-I18\-N}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{U\-S\-E\-\_\-\-I18\-N}]{\setlength{\rightskip}{0pt plus 5cm}wepo.\-settings.\-U\-S\-E\-\_\-\-I18\-N = True}}\label{namespacewepo_1_1settings_a5f014d097a8a6dc725e7437b20342ef6}
+
+
+If you set this to False, Django will make some optimizations so as not to load the internationalization machinery. 
+
+\hypertarget{namespacewepo_1_1settings_a397833200b8371e543b3320b2ff94536}{\index{wepo\-::settings@{wepo\-::settings}!U\-S\-E\-\_\-\-L10\-N@{U\-S\-E\-\_\-\-L10\-N}}
+\index{U\-S\-E\-\_\-\-L10\-N@{U\-S\-E\-\_\-\-L10\-N}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{U\-S\-E\-\_\-\-L10\-N}]{\setlength{\rightskip}{0pt plus 5cm}wepo.\-settings.\-U\-S\-E\-\_\-\-L10\-N = True}}\label{namespacewepo_1_1settings_a397833200b8371e543b3320b2ff94536}
+
+
+If you set this to False, Django will not format dates, numbers and calendars according to the current locale. 
+
+\hypertarget{namespacewepo_1_1settings_afbf0f0ae28ca43f39ae949a6e1cc61e9}{\index{wepo\-::settings@{wepo\-::settings}!U\-S\-E\-\_\-\-T\-Z@{U\-S\-E\-\_\-\-T\-Z}}
+\index{U\-S\-E\-\_\-\-T\-Z@{U\-S\-E\-\_\-\-T\-Z}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{U\-S\-E\-\_\-\-T\-Z}]{\setlength{\rightskip}{0pt plus 5cm}wepo.\-settings.\-U\-S\-E\-\_\-\-T\-Z = False}}\label{namespacewepo_1_1settings_afbf0f0ae28ca43f39ae949a6e1cc61e9}
+
+
+If you set this to False, Django will not use timezone-\/aware datetimes. 
+
+\hypertarget{namespacewepo_1_1settings_a74d020979efd117e8d7ae92a0e025ea5}{\index{wepo\-::settings@{wepo\-::settings}!W\-E\-P\-O\-\_\-\-A\-P\-P\-S@{W\-E\-P\-O\-\_\-\-A\-P\-P\-S}}
+\index{W\-E\-P\-O\-\_\-\-A\-P\-P\-S@{W\-E\-P\-O\-\_\-\-A\-P\-P\-S}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{W\-E\-P\-O\-\_\-\-A\-P\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}list wepo.\-settings.\-W\-E\-P\-O\-\_\-\-A\-P\-P\-S = \mbox{[}$\,$\mbox{]}}}\label{namespacewepo_1_1settings_a74d020979efd117e8d7ae92a0e025ea5}
+
+
+Wepo apps List all installed apps here. 
+
+\hypertarget{namespacewepo_1_1settings_aaa11b47894bdc61fd4ecfb02a1aeb72c}{\index{wepo\-::settings@{wepo\-::settings}!W\-S\-G\-I\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N@{W\-S\-G\-I\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N}}
+\index{W\-S\-G\-I\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N@{W\-S\-G\-I\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N}!wepo::settings@{wepo\-::settings}}
+\subsubsection[{W\-S\-G\-I\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings.\-W\-S\-G\-I\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N = '{\bf wepo.\-wsgi.\-application}'}}\label{namespacewepo_1_1settings_aaa11b47894bdc61fd4ecfb02a1aeb72c}
+
+
+Python dotted path to the W\-S\-G\-I application used by Django's runserver. 
+

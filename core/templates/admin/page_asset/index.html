@@ -1,0 +1,40 @@
+<div id="page-assets">
+
+{% for position,types in items.items %}
+   <div class="row-fluid">
+      <div class="span12 widget dragbox-content">
+         <div class="widget-header light">
+            <span class="title">{{ position|title }}</span>
+         </div>
+         <div class="widget-content clearfix">
+
+         {% for type,assets in types.items %}
+            <div class="span4 widget" data-position="{{ position }}" data-type="{{ type }}">
+               <div class="widget-content">
+                  <h4>{{ type|title }}</h4>
+                  <div class="widget-sortable widget-sortable-{{ type }}" id="{{ position }}-{{ type }}">
+
+                     {% for asset in assets %}
+                        {% include include_item_file with item=asset %}
+                     {% endfor %}
+
+                  </div>
+               </div>
+
+               <div class="toolbar btn-toolbar">
+                  <div class="btn-group dropup">
+                     <span class="btn wepo-add-asset"><i class="icol-accept"></i>Add</span>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+
+         </div>
+      </div>
+   </div>
+
+{% endfor %}
+
+<input id='wepo_form_assets' name='assets' type='hidden' value='{{ data }}'>
+
+</div>

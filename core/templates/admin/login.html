@@ -1,0 +1,34 @@
+{% load core_tags %}
+{% load core_filters %}
+{% autoescape off %}
+
+<div class="login-logo">
+   <img src="/assets/admin/images/logo.png" width="147" height="33" />
+</div>
+
+<div class="widget">
+   <div class="login-content">
+      <div class="widget-content" style="padding-bottom:0;">
+
+         {{ form }}
+
+            <div class="form-actions">
+               <label class="checkbox">
+                  <!--div class="checker"><span><input type="checkbox" value="1" name="remember" /></span></div-->
+               </label>
+               <button class="btn btn-warning pull-right" type="submit">
+                  Prijava <i class="m-icon-swapright m-icon-white"></i>
+               </button>
+               <div class="error  alert-danger">
+                  {% for error in error_messages %}
+                     {{ error.message }}<br />
+                  {% endfor %}
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+
+
+{% endautoescape %}

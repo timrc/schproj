@@ -1,0 +1,24 @@
+<!--form action="" method="post">
+   <div class="loginPic">
+      <a href="#" title="User picture">
+         <img src=" asset user_image_type user_image user_image_path user_image_size " alt="User picture">
+      </a>
+      <span> login_name </span>
+   </div>
+
+   <div class="logControl">
+      <table>
+          form.as_table
+      </table>
+      <input type="submit" value="Submit">
+   </div>
+</form-->
+
+<section class="loginform cf">
+   <form name="login" action="/user/authenticate" method="post" accept-charset="utf-8">
+      <ul>
+         {{ form.as_ul }}
+         <li><input type="submit" value="Login"></li>
+      </ul>
+   </form>
+</section>

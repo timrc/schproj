@@ -1,0 +1,132 @@
+\hypertarget{namespacecore_1_1page}{\section{core.\-page Namespace Reference}
+\label{namespacecore_1_1page}\index{core.\-page@{core.\-page}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecore_1_1page_a9e61dce694257d383facf992bef51bb5}{get\-\_\-url\-\_\-parts}
+\begin{DoxyCompactList}\small\item\em Get url parts from url. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1page_a779406b9d936864ae1a42062d034a906}{prepare\-\_\-request\-\_\-url}
+\begin{DoxyCompactList}\small\item\em prepare request for the page \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1page_ab91be99ed34faf312b42c20548946f00}{get\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Get seo. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1page_a83bddf354cc2d2742faa3bc73cb5145c}{render\-\_\-page}
+\begin{DoxyCompactList}\small\item\em Render page. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1page_aed1595bd8a98b2ba8bc984fb23dd3607}{page\-\_\-load\-\_\-assets}
+\begin{DoxyCompactList}\small\item\em Load assets recursive from page and it's parent, parent first. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1page_a10d2f6dc57dc1a823e4511afe0f223a0}{update\-\_\-request\-\_\-urls}
+\begin{DoxyCompactList}\small\item\em Extract active (dynamic) parts of url based on seo url. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacecore_1_1page_ab91be99ed34faf312b42c20548946f00}{\index{core\-::page@{core\-::page}!get\-\_\-seo@{get\-\_\-seo}}
+\index{get\-\_\-seo@{get\-\_\-seo}!core::page@{core\-::page}}
+\subsubsection[{get\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-page.\-get\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{url = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1page_ab91be99ed34faf312b42c20548946f00}
+
+
+Get seo. 
+
+load seo object of requested page from cache or db
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+seo object 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1page_a9e61dce694257d383facf992bef51bb5}{\index{core\-::page@{core\-::page}!get\-\_\-url\-\_\-parts@{get\-\_\-url\-\_\-parts}}
+\index{get\-\_\-url\-\_\-parts@{get\-\_\-url\-\_\-parts}!core::page@{core\-::page}}
+\subsubsection[{get\-\_\-url\-\_\-parts}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-page.\-get\-\_\-url\-\_\-parts (
+\begin{DoxyParamCaption}
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1page_a9e61dce694257d383facf992bef51bb5}
+
+
+Get url parts from url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & Url \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1page_aed1595bd8a98b2ba8bc984fb23dd3607}{\index{core\-::page@{core\-::page}!page\-\_\-load\-\_\-assets@{page\-\_\-load\-\_\-assets}}
+\index{page\-\_\-load\-\_\-assets@{page\-\_\-load\-\_\-assets}!core::page@{core\-::page}}
+\subsubsection[{page\-\_\-load\-\_\-assets}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-page.\-page\-\_\-load\-\_\-assets (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{page}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1page_aed1595bd8a98b2ba8bc984fb23dd3607}
+
+
+Load assets recursive from page and it's parent, parent first. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request object \\
+\hline
+{\em page} & Page object \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1page_a779406b9d936864ae1a42062d034a906}{\index{core\-::page@{core\-::page}!prepare\-\_\-request\-\_\-url@{prepare\-\_\-request\-\_\-url}}
+\index{prepare\-\_\-request\-\_\-url@{prepare\-\_\-request\-\_\-url}!core::page@{core\-::page}}
+\subsubsection[{prepare\-\_\-request\-\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-page.\-prepare\-\_\-request\-\_\-url (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1page_a779406b9d936864ae1a42062d034a906}
+
+
+prepare request for the page 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request object \\
+\hline
+{\em url} & Url of the request \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1page_a83bddf354cc2d2742faa3bc73cb5145c}{\index{core\-::page@{core\-::page}!render\-\_\-page@{render\-\_\-page}}
+\index{render\-\_\-page@{render\-\_\-page}!core::page@{core\-::page}}
+\subsubsection[{render\-\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-page.\-render\-\_\-page (
+\begin{DoxyParamCaption}
+\item[{}]{request}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1page_a83bddf354cc2d2742faa3bc73cb5145c}
+
+
+Render page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rendered page 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1page_a10d2f6dc57dc1a823e4511afe0f223a0}{\index{core\-::page@{core\-::page}!update\-\_\-request\-\_\-urls@{update\-\_\-request\-\_\-urls}}
+\index{update\-\_\-request\-\_\-urls@{update\-\_\-request\-\_\-urls}!core::page@{core\-::page}}
+\subsubsection[{update\-\_\-request\-\_\-urls}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-page.\-update\-\_\-request\-\_\-urls (
+\begin{DoxyParamCaption}
+\item[{}]{request}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1page_a10d2f6dc57dc1a823e4511afe0f223a0}
+
+
+Extract active (dynamic) parts of url based on seo url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request object \\
+\hline
+\end{DoxyParams}

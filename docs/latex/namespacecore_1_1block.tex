@@ -1,0 +1,208 @@
+\hypertarget{namespacecore_1_1block}{\section{core.\-block Namespace Reference}
+\label{namespacecore_1_1block}\index{core.\-block@{core.\-block}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecore_1_1block_a2eee1c1fb948eeb739bce5d411a62a16}{get\-\_\-block}
+\begin{DoxyCompactList}\small\item\em Get the block from given path or directly from the request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1block_ae441c05e2a28d533b65a61a6dc993e5c}{get\-\_\-block\-\_\-from\-\_\-development}
+\begin{DoxyCompactList}\small\item\em Get block from development environment. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1block_a24557895529b6c01cac47ae090c2b252}{get\-\_\-blocks}
+\begin{DoxyCompactList}\small\item\em Get blocks from installed apps. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1block_a7b4367b79966cfcd5fa225214cb3e7ed}{get\-\_\-page\-\_\-blocks}
+\begin{DoxyCompactList}\small\item\em Get page blocks. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1block_abdc40404a66abf3472930f40549e9928}{render\-\_\-block}
+\begin{DoxyCompactList}\small\item\em Render block. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1block_a4e59edab360c7de0aed37cec78c33847}{get\-\_\-block\-\_\-from\-\_\-url}
+\begin{DoxyCompactList}\small\item\em Get block from url by key\-\_\-name. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1block_abe6f69419346142360646f6e06b2a626}{get\-\_\-block\-\_\-from\-\_\-cache}
+\begin{DoxyCompactList}\small\item\em Get block from cache. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1block_ac1d9c454514c4d9184292e2d08518fb9}{get\-\_\-block\-\_\-from\-\_\-db}
+\begin{DoxyCompactList}\small\item\em Get block from database. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1block_a355424af2d26b7268823eece1f38b782}{render\-\_\-block\-\_\-json}
+\begin{DoxyCompactList}\small\item\em Render block as json. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacecore_1_1block_a2eee1c1fb948eeb739bce5d411a62a16}{\index{core\-::block@{core\-::block}!get\-\_\-block@{get\-\_\-block}}
+\index{get\-\_\-block@{get\-\_\-block}!core::block@{core\-::block}}
+\subsubsection[{get\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-block.\-get\-\_\-block (
+\begin{DoxyParamCaption}
+\item[{}]{block\-\_\-path, }
+\item[{}]{development = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1block_a2eee1c1fb948eeb739bce5d411a62a16}
+
+
+Get the block from given path or directly from the request. 
+
+/core/admin/common/header-\/navigation -\/$>$ /core/blocks/admin/common/header-\/navigation /my\-\_\-module/admin/common/header-\/navigation -\/$>$ /apps/my\-\_\-module/blocks/admin/common/header-\/navigation /development/admin/common/header-\/navigation -\/$>$ /development/admin/common/header-\/navigation
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+{\em development} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1block_abe6f69419346142360646f6e06b2a626}{\index{core\-::block@{core\-::block}!get\-\_\-block\-\_\-from\-\_\-cache@{get\-\_\-block\-\_\-from\-\_\-cache}}
+\index{get\-\_\-block\-\_\-from\-\_\-cache@{get\-\_\-block\-\_\-from\-\_\-cache}!core::block@{core\-::block}}
+\subsubsection[{get\-\_\-block\-\_\-from\-\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-block.\-get\-\_\-block\-\_\-from\-\_\-cache (
+\begin{DoxyParamCaption}
+\item[{}]{block\-\_\-id, }
+\item[{}]{id\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1block_abe6f69419346142360646f6e06b2a626}
+
+
+Get block from cache. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block\-\_\-id} & Block id \\
+\hline
+{\em id\-\_\-type} & Type of the id; name, key\-\_\-name, ...\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: block object 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1block_ac1d9c454514c4d9184292e2d08518fb9}{\index{core\-::block@{core\-::block}!get\-\_\-block\-\_\-from\-\_\-db@{get\-\_\-block\-\_\-from\-\_\-db}}
+\index{get\-\_\-block\-\_\-from\-\_\-db@{get\-\_\-block\-\_\-from\-\_\-db}!core::block@{core\-::block}}
+\subsubsection[{get\-\_\-block\-\_\-from\-\_\-db}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-block.\-get\-\_\-block\-\_\-from\-\_\-db (
+\begin{DoxyParamCaption}
+\item[{}]{block\-\_\-id, }
+\item[{}]{id\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1block_ac1d9c454514c4d9184292e2d08518fb9}
+
+
+Get block from database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block\-\_\-id} & Block id \\
+\hline
+{\em id\-\_\-type} & Type of the id; name, key\-\_\-name, ...\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: block object 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1block_ae441c05e2a28d533b65a61a6dc993e5c}{\index{core\-::block@{core\-::block}!get\-\_\-block\-\_\-from\-\_\-development@{get\-\_\-block\-\_\-from\-\_\-development}}
+\index{get\-\_\-block\-\_\-from\-\_\-development@{get\-\_\-block\-\_\-from\-\_\-development}!core::block@{core\-::block}}
+\subsubsection[{get\-\_\-block\-\_\-from\-\_\-development}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-block.\-get\-\_\-block\-\_\-from\-\_\-development (
+\begin{DoxyParamCaption}
+\item[{}]{path, }
+\item[{}]{development}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1block_ae441c05e2a28d533b65a61a6dc993e5c}
+
+
+Get block from development environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path of the block \\
+\hline
+{\em development} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1block_a4e59edab360c7de0aed37cec78c33847}{\index{core\-::block@{core\-::block}!get\-\_\-block\-\_\-from\-\_\-url@{get\-\_\-block\-\_\-from\-\_\-url}}
+\index{get\-\_\-block\-\_\-from\-\_\-url@{get\-\_\-block\-\_\-from\-\_\-url}!core::block@{core\-::block}}
+\subsubsection[{get\-\_\-block\-\_\-from\-\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-block.\-get\-\_\-block\-\_\-from\-\_\-url (
+\begin{DoxyParamCaption}
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1block_a4e59edab360c7de0aed37cec78c33847}
+
+
+Get block from url by key\-\_\-name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & Url of the block\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+block object 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1block_a24557895529b6c01cac47ae090c2b252}{\index{core\-::block@{core\-::block}!get\-\_\-blocks@{get\-\_\-blocks}}
+\index{get\-\_\-blocks@{get\-\_\-blocks}!core::block@{core\-::block}}
+\subsubsection[{get\-\_\-blocks}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-block.\-get\-\_\-blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1block_a24557895529b6c01cac47ae090c2b252}
+
+
+Get blocks from installed apps. 
+
+\begin{DoxyReturn}{Returns}
+Block list 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1block_a7b4367b79966cfcd5fa225214cb3e7ed}{\index{core\-::block@{core\-::block}!get\-\_\-page\-\_\-blocks@{get\-\_\-page\-\_\-blocks}}
+\index{get\-\_\-page\-\_\-blocks@{get\-\_\-page\-\_\-blocks}!core::block@{core\-::block}}
+\subsubsection[{get\-\_\-page\-\_\-blocks}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-block.\-get\-\_\-page\-\_\-blocks (
+\begin{DoxyParamCaption}
+\item[{}]{request}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1block_a7b4367b79966cfcd5fa225214cb3e7ed}
+
+
+Get page blocks. 
+
+\mbox{[} \{name, path, attributes\}, ... \mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1block_abdc40404a66abf3472930f40549e9928}{\index{core\-::block@{core\-::block}!render\-\_\-block@{render\-\_\-block}}
+\index{render\-\_\-block@{render\-\_\-block}!core::block@{core\-::block}}
+\subsubsection[{render\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-block.\-render\-\_\-block (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{block = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1block_abdc40404a66abf3472930f40549e9928}
+
+
+Render block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request object \\
+\hline
+{\em block} & Block to render \\
+\hline
+{\em attributes} & Optional block additional attributes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rendered block 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1block_a355424af2d26b7268823eece1f38b782}{\index{core\-::block@{core\-::block}!render\-\_\-block\-\_\-json@{render\-\_\-block\-\_\-json}}
+\index{render\-\_\-block\-\_\-json@{render\-\_\-block\-\_\-json}!core::block@{core\-::block}}
+\subsubsection[{render\-\_\-block\-\_\-json}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-block.\-render\-\_\-block\-\_\-json (
+\begin{DoxyParamCaption}
+\item[{}]{block, }
+\item[{}]{assets = {\ttfamily \mbox{[}\mbox{]}}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1block_a355424af2d26b7268823eece1f38b782}
+
+
+Render block as json. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & Block code to put into json \\
+\hline
+{\em assets} & a List of assets to be included into json\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Json of block code and assets 
+\end{DoxyReturn}

@@ -1,0 +1,41 @@
+<div class="row">
+   <div class="col-lg-3" style="height: 200px;overflow-y: auto;overflow-x: hidden;">
+      {% include 'files/directory_tree.html' with directories=directories %}
+   </div>
+
+   <div class="col-lg-9">
+      <div class="widget widget-2 widget-tabs">
+         <div class="widget-head">
+             <div class="navbar">
+                 <div class="navbar-inner">
+                     <div class="container">
+                            <ul class='file_tabs nav'>
+                               <li class="active files_browse_files_li"><a class="glyphicons coffe_cup files_browse_files" href="#files_browse_files" data-toggle="tab"><i></i>Browse</a></li>
+                               <li class="files_edit_file_li" style="display:none;"><a class="glyphicons share_alt files_edit_file" href="#files_edit_file" data-toggle="tab"><i></i>Edit</a></li>
+                               <li class="files_image_crop_li" style="display:none;"><a class="glyphicons share_alt files_image_crop" href="#files_image_crop" data-toggle="tab"><i></i>Image crop</a></li>
+                            </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="widget-body scroll-content" style="height:450px;overflow-y: auto;overflow-x: hidden;">
+            <div class="tab-content">
+               <div class="tab-pane active" id="files_browse_files">
+                  <form id="files_container">
+                     {% include 'files/file_list_container.html' with dummy_count=dummy_count file_tags=file_tags %}
+                  </form>
+                  <div style="clear:both;"></div>
+               </div>
+
+               <div class="tab-pane" id="files_edit_file">
+                  {% include 'files/file_edit.html' with form_file_title=form_file_title form_file_description=form_file_description form_file_author=form_file_author %}
+               </div>
+
+               <div class="tab-pane" id="files_image_crop">
+                  {% include 'files/image_crop.html' with scales=scales %}
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

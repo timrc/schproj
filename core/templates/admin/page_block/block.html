@@ -1,0 +1,30 @@
+<div class="widget" id="{{ block.key_name }}" data-enabled="{% if status %}1{% else %}0{% endif %}">
+   <div class="widget-content no-padding">
+      <span class="btn btn-no-padding remove-page-block" style="float:right;">
+         <i class="icol-cross"></i>
+      </span>
+      <span class="btn btn-no-padding toggle-page-block" style="float:right;">
+         <i class="icon-{% if status %}minus{% else %}plus{% endif %}"></i>
+      </span>
+      {% if attributes %}
+         <span class="btn btn-no-padding toggle-page-block-attributes" style="float:right;">
+            <i class="icon-caret-down"></i>
+         </span>
+      {% endif %}
+      <p class="alert alert-{% if status %}success{% else %}error{% endif %}">{{ block.name }}</p>
+   </div>
+   {% if attributes %}
+      <div class="widget-content summary-list block-attributes" style="display: none;">
+         <ul>
+            {% for attribute, attribute_value in attributes.items %}
+            <li>
+               <span class="key">{{ attribute }}</span>
+               <span class="val">
+                  <input type='text' class='span12' placeholder='Attribute {{ attribute }} value' value="{{ attribute_value }}">
+               </span>
+            </li>
+            {% endfor %}
+         </ul>
+      </div>
+   {% endif %}
+</div>

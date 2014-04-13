@@ -1,0 +1,93 @@
+{% load core_tags %}
+{% load core_filters %}
+{% autoescape off %}
+
+{% if start_row %}<div class="row">{% endif %}
+   <div class="col-lg-{{ widget_size }}">
+      <div class="widget">
+         <div class="widget-header"> <i class="icon-columns"></i>
+               <h3>{{ model_name|title|_ }}</h3>
+         </div>
+         <div class="widget-content">
+            <div class="body">
+               {% if objects %}
+                  <table class="table table-hover">
+                  <thead>
+                     <tr>
+                        <th class="hidden-xs"><input type="checkbox" class="uniform checkbox-toggle"></th>
+                        {% for field_name, field_data in fields.items %}
+                           {% if field_data.field_type == 'CharField' or field_data.field_type == 'ForeignKey' %}
+                              {% if not field_data.config.hidden %}
+                                 <th>{{ field_name|title|_ }}</th>
+                              {% endif %}
+                           {% endif %}
+                        {% endfor %}
+                        <th class="table-actions">{{ "Actions"|_ }}</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     {% for object in objects %}
+                     <tr  data-item-id="{{ object.id }}" {% if object|exists_and_false:"enabled" %}class="error"{% endif %}>
+
+                        <td class="hidden-xs"><input type="checkbox" class="uniform" value="{{ object.id }}" id="item-{{ object.id }}"></td>
+                        {% for field_name, field_data in fields.items %}
+                           {% if field_data.field_type == 'CharField' or field_data.field_type == 'ForeignKey' %}
+                              {% if not field_data.config.hidden %}
+                                 <td>{{ object|get_attribute:field_name }}</td>
+                              {% endif %}
+                           {% endif %}
+                        {% endfor %}
+
+                        <td>
+                           <a href="/admin/object/edit/{{ model_name }}/{{ object.id }}" class="btn btn-sm btn-primary pull-right"> {{ "Edit"|_ }} </a>
+                           <a href="/admin/object/delete/{{ model_name }}/{{ object.id }}" data-toggle="button" class="btn btn-sm btn-warning pull-right"> {{ "Delete"|_ }} </a>
+                        </td>
+                     </tr>
+                     {% endfor %}
+                  </tbody>
+                  </table>
+
+                  {% if show_pagination %}
+                  <div class="clearfix">
+                     <ul class="pagination no-margin">
+                        {% ifequal list_page list_first %}
+                           <li class="disabled"><a>{{ "First"|_ }}</a></li>
+                           <li class="disabled"><a>← {{ "Previous"|_ }}</a></li>
+                        {% else %}
+                           <li><a href="{{ url|remove_url_key:'_page' }}_page={{ list_first }}">{{ "First"|_ }}</a></li>
+                           <li><a href="{{ url|remove_url_key:'_page' }}_page={{ list_page|add:-1 }}">←{{ "Previous"|_ }}</a></li>
+                        {% endifequal %}
+
+                        {% for pag in pagination %}
+                           {% if pag == page %}
+                              <li class="active"><a href="?_page={{ pag }}">{{ pag|add:1 }}</a></li>
+                           {% else %}
+                              <li><a href="{{ url|remove_url_key:'_page' }}_page={{ pag }}">{{ pag|add:1 }}</a></li>
+                           {% endif %}
+                        {% endfor %}
+
+                        {% ifequal list_page list_last %}
+                           <li class="disabled"><a>{{ "Next"|_ }} →</a></li>
+                           <li class="disabled"><a>{{ "Last"|_ }}</a></li>
+                        {% else %}
+                           <li><a href="{{ url|remove_url_key:'_page' }}_page={{ list_page|add:1 }}">{{ "Next"|_ }} →</a></li>
+                           <li><a href="{{ url|remove_url_key:'_page' }}_page={{ list_last }}">{{ "Last"|_ }}</a></li>
+                        {% endifequal %}
+                     </ul>
+                  </div>
+                  {% endif %}
+               {% endif %}
+
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="pull-right">
+                        <a href="/admin/object/edit/{{ model_name }}.html" type="button" class="btn btn-icon btn-success"><i></i>{{ add_new_button }}</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% if end_row %}</div>{% endif %}
+{% endautoescape %}

@@ -1,0 +1,11 @@
+<div class="widget" id="{{ item.asset.key_name }}" data-enabled="{{ asset.enabled }}">
+   <div class="widget-content no-padding">
+      <span class="btn btn-no-padding remove-page-asset" style="float:right;">
+         <i class="icol-cross"></i>
+      </span>
+      <span class="btn btn-no-padding toggle-page-asset" style="float:right;">
+         <i class="icon-{% if asset.status %}minus{% else %}plus{% endif %}"></i>
+      </span>
+      <p class="alert alert-{% if asset.status %}success{% else %}error{% endif %}">{{ item.asset.name }}</p>
+   </div>
+</div>

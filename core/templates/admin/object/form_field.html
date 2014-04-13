@@ -1,0 +1,47 @@
+{% load core_filters %}
+{% autoescape off %}
+
+<div class="control-group">
+   <!-- Username -->
+   <label for="username" class="col-md-2">{{ field_name|title|_ }}</label>
+   <div class="form-group">
+      <div class="col-md-10">
+         {{ field }}
+         <!--input type="text" class="form-control" placeholder="" name="username" id="username">
+         <span class="help-block">Username can contain any letters or numbers, without spaces</span-->
+      </div>
+   </div>
+</div>
+{% endautoescape %}
+
+
+
+
+
+   <!--div class="control-group">
+      <label for="username" class="col-md-2">Username</label>
+      <div class="form-group">
+         <div class="col-md-10">
+            <input type="text" class="form-control" placeholder="" name="username" id="username">
+            <span class="help-block">Username can contain any letters or numbers, without spaces</span>
+         </div>
+      </div>
+   </div>
+   <div class="control-group">
+      <label for="email" class="col-md-2">Email</label>
+      <div class="form-group">
+         <div class="col-md-10">
+            <input type="text" class="form-control" placeholder="" name="email" id="email">
+            <span class="help-block">Please provide your E-mail</span>
+         </div>
+      </div>
+   </div>
+   <div class="control-group">
+      <label for="address" class="col-md-2">Address</label>
+      <div class="form-group">
+         <div class="col-md-10">
+            <input type="text" class="form-control" placeholder="" name="address" id="address">
+            <span class="help-block">Please provide your address</span>
+         </div>
+      </div>
+   </div-->

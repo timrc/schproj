@@ -1,0 +1,181 @@
+\hypertarget{classcore_1_1models_1_1Page}{\section{core.\-models.\-Page Class Reference}
+\label{classcore_1_1models_1_1Page}\index{core.\-models.\-Page@{core.\-models.\-Page}}
+}
+
+
+\hyperlink{classcore_1_1models_1_1Page}{Page}.  
+
+
+Inheritance diagram for core.\-models.\-Page\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcore_1_1models_1_1Page}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1models_1_1Page_1_1Meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcore_1_1models_1_1Page_a1438fd9de6724c34236b99148a7f0e14}{\-\_\-\-\_\-unicode\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcore_1_1models_1_1Page_afeb78b5c518fe105f53207535d9ddb89}{delete}
+\begin{DoxyCompactList}\small\item\em Custom delete method. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1Page_a17d5c6f2f5fecddd39a24b4934f163fe}{save}
+\begin{DoxyCompactList}\small\item\em Custom save method. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1Page_ae8bb1e3e592ad6187bb4ae0d959a65a4}{get\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Get seo link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1models_1_1Page_acab3eb077ef1d77f01a48bff74c956df}{enabled}
+\item 
+\hyperlink{classcore_1_1models_1_1Page_a25178e4dfd9fafc8e1e6dea92ed53471}{key\-\_\-name}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcore_1_1models_1_1Page_a78ec187207c0e8f2c223693265a67482}{parent} = dmodels.\-Foreign\-Key('self', null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em Parent of the page. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Page_a6d9d0e7d9e679e159e300f5664dc30f3}{name} = dmodels.\-Char\-Field(max\-\_\-length=64, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Page}{Page} name. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Page_a25178e4dfd9fafc8e1e6dea92ed53471}{key\-\_\-name} = dmodels.\-Char\-Field(max\-\_\-length=64, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em Unique identifier of the layout. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Page_acab3eb077ef1d77f01a48bff74c956df}{enabled} = dmodels.\-Boolean\-Field(default=True)
+\begin{DoxyCompactList}\small\item\em Status if the page is enabled. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Page_a2f5022d3c036a292307aa93776e9ef0a}{layout} = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Page}{Page} layout. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Page_ac8581869cbe320c85b6be487430d23ef}{permissions} = \hyperlink{classcore_1_1fields_1_1JsonField}{Json\-Field}(null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Page}{Page} permissions. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Page_a8929e212abf0bd54841eff713c431039}{blocks} = \hyperlink{classcore_1_1fields_1_1JsonField}{Json\-Field}(null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Page}{Page} blocks. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Page_a2be141ff9260f87470c61991ef24d924}{assets} = \hyperlink{classcore_1_1fields_1_1JsonField}{Json\-Field}(null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Page}{Page} assets. \end{DoxyCompactList}\item 
+int \hyperlink{classcore_1_1models_1_1Page_ad187b76ce6d3fa0e61f125da2536744e}{wepo\-\_\-counter} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcore_1_1models_1_1Page}{Page}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcore_1_1models_1_1Page_a1438fd9de6724c34236b99148a7f0e14}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{\-\_\-\-\_\-unicode\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Page.\-\_\-\-\_\-unicode\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Page_a1438fd9de6724c34236b99148a7f0e14}
+\hypertarget{classcore_1_1models_1_1Page_afeb78b5c518fe105f53207535d9ddb89}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!delete@{delete}}
+\index{delete@{delete}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Page.\-delete (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Page_afeb78b5c518fe105f53207535d9ddb89}
+
+
+Custom delete method. 
+
+\hypertarget{classcore_1_1models_1_1Page_ae8bb1e3e592ad6187bb4ae0d959a65a4}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!get\-\_\-seo@{get\-\_\-seo}}
+\index{get\-\_\-seo@{get\-\_\-seo}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{get\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Page.\-get\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Page_ae8bb1e3e592ad6187bb4ae0d959a65a4}
+
+
+Get seo link. 
+
+\hypertarget{classcore_1_1models_1_1Page_a17d5c6f2f5fecddd39a24b4934f163fe}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!save@{save}}
+\index{save@{save}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Page.\-save (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{force\-\_\-insert = {\ttfamily False}, }
+\item[{}]{force\-\_\-update = {\ttfamily False}, }
+\item[{}]{using = {\ttfamily None}, }
+\item[{}]{update\-\_\-fields = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Page_a17d5c6f2f5fecddd39a24b4934f163fe}
+
+
+Custom save method. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcore_1_1models_1_1Page_a2be141ff9260f87470c61991ef24d924}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!assets@{assets}}
+\index{assets@{assets}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{assets}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-assets = {\bf Json\-Field}(null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Page_a2be141ff9260f87470c61991ef24d924}
+
+
+\hyperlink{classcore_1_1models_1_1Page}{Page} assets. 
+
+\hypertarget{classcore_1_1models_1_1Page_a8929e212abf0bd54841eff713c431039}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!blocks@{blocks}}
+\index{blocks@{blocks}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{blocks}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-blocks = {\bf Json\-Field}(null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Page_a8929e212abf0bd54841eff713c431039}
+
+
+\hyperlink{classcore_1_1models_1_1Page}{Page} blocks. 
+
+\hypertarget{classcore_1_1models_1_1Page_acab3eb077ef1d77f01a48bff74c956df}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!enabled@{enabled}}
+\index{enabled@{enabled}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-enabled = dmodels.\-Boolean\-Field(default=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Page_acab3eb077ef1d77f01a48bff74c956df}
+
+
+Status if the page is enabled. 
+
+\hypertarget{classcore_1_1models_1_1Page_acab3eb077ef1d77f01a48bff74c956df}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!enabled@{enabled}}
+\index{enabled@{enabled}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-enabled}}\label{classcore_1_1models_1_1Page_acab3eb077ef1d77f01a48bff74c956df}
+\hypertarget{classcore_1_1models_1_1Page_a25178e4dfd9fafc8e1e6dea92ed53471}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-key\-\_\-name = dmodels.\-Char\-Field(max\-\_\-length=64, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Page_a25178e4dfd9fafc8e1e6dea92ed53471}
+
+
+Unique identifier of the layout. 
+
+\hypertarget{classcore_1_1models_1_1Page_a25178e4dfd9fafc8e1e6dea92ed53471}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-key\-\_\-name}}\label{classcore_1_1models_1_1Page_a25178e4dfd9fafc8e1e6dea92ed53471}
+\hypertarget{classcore_1_1models_1_1Page_a2f5022d3c036a292307aa93776e9ef0a}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!layout@{layout}}
+\index{layout@{layout}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{layout}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-layout = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Page_a2f5022d3c036a292307aa93776e9ef0a}
+
+
+\hyperlink{classcore_1_1models_1_1Page}{Page} layout. 
+
+\hypertarget{classcore_1_1models_1_1Page_a6d9d0e7d9e679e159e300f5664dc30f3}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!name@{name}}
+\index{name@{name}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-name = dmodels.\-Char\-Field(max\-\_\-length=64, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Page_a6d9d0e7d9e679e159e300f5664dc30f3}
+
+
+\hyperlink{classcore_1_1models_1_1Page}{Page} name. 
+
+\hypertarget{classcore_1_1models_1_1Page_a78ec187207c0e8f2c223693265a67482}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!parent@{parent}}
+\index{parent@{parent}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-parent = dmodels.\-Foreign\-Key('self', null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Page_a78ec187207c0e8f2c223693265a67482}
+
+
+Parent of the page. 
+
+\hypertarget{classcore_1_1models_1_1Page_ac8581869cbe320c85b6be487430d23ef}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!permissions@{permissions}}
+\index{permissions@{permissions}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{permissions}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Page.\-permissions = {\bf Json\-Field}(null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Page_ac8581869cbe320c85b6be487430d23ef}
+
+
+\hyperlink{classcore_1_1models_1_1Page}{Page} permissions. 
+
+\hypertarget{classcore_1_1models_1_1Page_ad187b76ce6d3fa0e61f125da2536744e}{\index{core\-::models\-::\-Page@{core\-::models\-::\-Page}!wepo\-\_\-counter@{wepo\-\_\-counter}}
+\index{wepo\-\_\-counter@{wepo\-\_\-counter}!core::models::Page@{core\-::models\-::\-Page}}
+\subsubsection[{wepo\-\_\-counter}]{\setlength{\rightskip}{0pt plus 5cm}int core.\-models.\-Page.\-wepo\-\_\-counter = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Page_ad187b76ce6d3fa0e61f125da2536744e}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/wepo/core/\hyperlink{models_8py}{models.\-py}\end{DoxyCompactItemize}

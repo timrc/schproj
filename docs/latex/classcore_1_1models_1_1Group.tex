@@ -1,0 +1,115 @@
+\hypertarget{classcore_1_1models_1_1Group}{\section{core.\-models.\-Group Class Reference}
+\label{classcore_1_1models_1_1Group}\index{core.\-models.\-Group@{core.\-models.\-Group}}
+}
+
+
+Groups.  
+
+
+Inheritance diagram for core.\-models.\-Group\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcore_1_1models_1_1Group}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1models_1_1Group_1_1Meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcore_1_1models_1_1Group_a8764b5ef1972100111dd0d33c95f417a}{\-\_\-\-\_\-unicode\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcore_1_1models_1_1Group_ab867392abab3272052c7bce26c5fbea4}{save}
+\begin{DoxyCompactList}\small\item\em Custom save method. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1Group_a0ff6af440da1ef342556e893de28537b}{get\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Get seo link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1models_1_1Group_a0e455bf93e8ef057105e84940632e65e}{key\-\_\-name}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcore_1_1models_1_1Group_a4cdd32a2664af27834735b341b78422a}{name} = dmodels.\-Char\-Field(max\-\_\-length=64)
+\begin{DoxyCompactList}\small\item\em Name of the group. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Group_a0e455bf93e8ef057105e84940632e65e}{key\-\_\-name} = dmodels.\-Char\-Field(max\-\_\-length=64, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em Unique identifier of the group. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Group_af6dd4a8383b686c8eb65fdb5310983a6}{permissions} = \hyperlink{classcore_1_1fields_1_1JsonField}{Json\-Field}(null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em List of permissions in group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Groups. 
+
+To group specified permissions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcore_1_1models_1_1Group_a8764b5ef1972100111dd0d33c95f417a}{\index{core\-::models\-::\-Group@{core\-::models\-::\-Group}!\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}!core::models::Group@{core\-::models\-::\-Group}}
+\subsubsection[{\-\_\-\-\_\-unicode\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Group.\-\_\-\-\_\-unicode\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Group_a8764b5ef1972100111dd0d33c95f417a}
+\hypertarget{classcore_1_1models_1_1Group_a0ff6af440da1ef342556e893de28537b}{\index{core\-::models\-::\-Group@{core\-::models\-::\-Group}!get\-\_\-seo@{get\-\_\-seo}}
+\index{get\-\_\-seo@{get\-\_\-seo}!core::models::Group@{core\-::models\-::\-Group}}
+\subsubsection[{get\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Group.\-get\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Group_a0ff6af440da1ef342556e893de28537b}
+
+
+Get seo link. 
+
+\hypertarget{classcore_1_1models_1_1Group_ab867392abab3272052c7bce26c5fbea4}{\index{core\-::models\-::\-Group@{core\-::models\-::\-Group}!save@{save}}
+\index{save@{save}!core::models::Group@{core\-::models\-::\-Group}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Group.\-save (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{force\-\_\-insert = {\ttfamily False}, }
+\item[{}]{force\-\_\-update = {\ttfamily False}, }
+\item[{}]{using = {\ttfamily None}, }
+\item[{}]{update\-\_\-fields = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Group_ab867392abab3272052c7bce26c5fbea4}
+
+
+Custom save method. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcore_1_1models_1_1Group_a0e455bf93e8ef057105e84940632e65e}{\index{core\-::models\-::\-Group@{core\-::models\-::\-Group}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::Group@{core\-::models\-::\-Group}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Group.\-key\-\_\-name = dmodels.\-Char\-Field(max\-\_\-length=64, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Group_a0e455bf93e8ef057105e84940632e65e}
+
+
+Unique identifier of the group. 
+
+\hypertarget{classcore_1_1models_1_1Group_a0e455bf93e8ef057105e84940632e65e}{\index{core\-::models\-::\-Group@{core\-::models\-::\-Group}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::Group@{core\-::models\-::\-Group}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Group.\-key\-\_\-name}}\label{classcore_1_1models_1_1Group_a0e455bf93e8ef057105e84940632e65e}
+\hypertarget{classcore_1_1models_1_1Group_a4cdd32a2664af27834735b341b78422a}{\index{core\-::models\-::\-Group@{core\-::models\-::\-Group}!name@{name}}
+\index{name@{name}!core::models::Group@{core\-::models\-::\-Group}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Group.\-name = dmodels.\-Char\-Field(max\-\_\-length=64)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Group_a4cdd32a2664af27834735b341b78422a}
+
+
+Name of the group. 
+
+\hypertarget{classcore_1_1models_1_1Group_af6dd4a8383b686c8eb65fdb5310983a6}{\index{core\-::models\-::\-Group@{core\-::models\-::\-Group}!permissions@{permissions}}
+\index{permissions@{permissions}!core::models::Group@{core\-::models\-::\-Group}}
+\subsubsection[{permissions}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Group.\-permissions = {\bf Json\-Field}(null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Group_af6dd4a8383b686c8eb65fdb5310983a6}
+
+
+List of permissions in group. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/wepo/core/\hyperlink{models_8py}{models.\-py}\end{DoxyCompactItemize}

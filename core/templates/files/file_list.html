@@ -1,0 +1,23 @@
+{% load core_filters %}
+
+{% for file in files %}
+{% with is_image=file|is_image %}
+<div class="files_list_file" data-id="{{ file.id }}" data-mime-type="{{ file.mime_type }}" data-file-tag="{{ file|file_tag }}" data-file="{{ file|image:'' }}">
+   <div class="file_img_wrapper">
+         {% if is_image %}
+            <img src="/media/{{ file.path }}/tmbs_{{ file.file_name }}" data-width="{{ file.data.meta.width }}" data-height="{{ file.data.meta.height }}" />
+         {% else %}
+            <img src="/assets/wepo/files/images/file_type_icons/100px/{{ file|known_file_extension }}.png" />
+         {% endif %}
+   </div>
+   <span class='file_name'>{{ file.title }}</span>
+
+   <div class="file_controls">
+      <p>
+         <a href="#" class="file-edit btn btn-info"><!-- i class="icon-edit"></i -->Edit</a>
+         <a href="#" class="file-delete btn btn-primary"><!-- i class="icon-remove"></i -->Delete</a>
+      </p>
+   </div>
+</div>
+{% endwith %}
+{% endfor %}

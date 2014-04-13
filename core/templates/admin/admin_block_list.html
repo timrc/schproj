@@ -1,0 +1,31 @@
+<div id="page-block-list" class="span10 widget">
+   <div class="widget-header">
+      <span class="title"><i class="icos-address-book"></i>Blocks</span>
+      <div class="toolbar">
+         <div class="btn-group">
+            <span class="btn close-widget"><i class="icol-cross"></i></span>
+         </div>
+      </div>
+   </div>
+   <div class="widget-content no-padding">
+      <ul id="contacts">
+
+      {% for block_group, blocks in blocks_list.items %}
+         <li data-group="{{ block_group }}">
+            <a class="title">{{ block_group|title }}</a>
+            <ul>
+            {% for block in blocks %}
+               <li data-block="{{ block.key_name }}" data-block-name="{{ block.name }}" data-block-attributes='{{ block.attributes }}'>
+                  <a href="#" class="select-section-block">
+                      <span class="thumbnail"><img src="/assets/sample/p7.jpg"></span>{{ block.name }}
+                      <span style="font-size: 11px; display: block;" class="muted">Module: {{ block.module }}</span>
+                  </a>
+               </li>
+            {% endfor %}
+            </ul>
+         </li>
+      {% endfor %}
+
+      </ul>
+   </div>
+</div>

@@ -1,0 +1,103 @@
+\hypertarget{namespacewepo_1_1settings__local}{\section{wepo.\-settings\-\_\-local Namespace Reference}
+\label{namespacewepo_1_1settings__local}\index{wepo.\-settings\-\_\-local@{wepo.\-settings\-\_\-local}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacewepo_1_1settings__local_ab901350a2926e04c72533eb35929e544}{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T} = True
+\begin{DoxyCompactList}\small\item\em Development environment? \end{DoxyCompactList}\item 
+list \hyperlink{namespacewepo_1_1settings__local_a2a6dd2eb093d78609eb8995efb98d166}{W\-E\-P\-O\-\_\-\-A\-P\-P\-S} = \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Wepo apps List all installed apps here. \end{DoxyCompactList}\item 
+dictionary \hyperlink{namespacewepo_1_1settings__local_a0ddad315e1cafe9c0abdddc17f245c32}{D\-A\-T\-A\-B\-A\-S\-E\-S}
+\begin{DoxyCompactList}\small\item\em Database. \end{DoxyCompactList}\item 
+dictionary \hyperlink{namespacewepo_1_1settings__local_a8d75a3f9cf538fd56aebc0439129325d}{C\-A\-C\-H\-E\-S}
+\begin{DoxyCompactList}\small\item\em Cache. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings__local_a75935e5d1b35b2475ca23bd142553a2f}{A\-P\-P\-S\-\_\-\-D\-I\-R} = 'apps'
+\begin{DoxyCompactList}\small\item\em Default apps installation settings, no need to change anything bellow. \end{DoxyCompactList}\item 
+string \hyperlink{namespacewepo_1_1settings__local_a1f16861da0c8d2a2e984d57e5ea2b784}{M\-E\-D\-I\-A\-\_\-\-U\-R\-L} = '/media/'
+\begin{DoxyCompactList}\small\item\em U\-R\-L that handles the media served from M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacewepo_1_1settings__local_a75935e5d1b35b2475ca23bd142553a2f}{\index{wepo\-::settings\-\_\-local@{wepo\-::settings\-\_\-local}!A\-P\-P\-S\-\_\-\-D\-I\-R@{A\-P\-P\-S\-\_\-\-D\-I\-R}}
+\index{A\-P\-P\-S\-\_\-\-D\-I\-R@{A\-P\-P\-S\-\_\-\-D\-I\-R}!wepo::settings_local@{wepo\-::settings\-\_\-local}}
+\subsubsection[{A\-P\-P\-S\-\_\-\-D\-I\-R}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings\-\_\-local.\-A\-P\-P\-S\-\_\-\-D\-I\-R = 'apps'}}\label{namespacewepo_1_1settings__local_a75935e5d1b35b2475ca23bd142553a2f}
+
+
+Default apps installation settings, no need to change anything bellow. 
+
+\hypertarget{namespacewepo_1_1settings__local_a8d75a3f9cf538fd56aebc0439129325d}{\index{wepo\-::settings\-\_\-local@{wepo\-::settings\-\_\-local}!C\-A\-C\-H\-E\-S@{C\-A\-C\-H\-E\-S}}
+\index{C\-A\-C\-H\-E\-S@{C\-A\-C\-H\-E\-S}!wepo::settings_local@{wepo\-::settings\-\_\-local}}
+\subsubsection[{C\-A\-C\-H\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}dictionary wepo.\-settings\-\_\-local.\-C\-A\-C\-H\-E\-S}}\label{namespacewepo_1_1settings__local_a8d75a3f9cf538fd56aebc0439129325d}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \{
+2    \textcolor{stringliteral}{'default'} : dict(
+3       BACKEND = \textcolor{stringliteral}{'johnny.backends.memcached.MemcachedCache'},
+4       LOCATION = [\textcolor{stringliteral}{'127.0.0.1:11211'}, ],
+5       JOHNNY\_CACHE = \textcolor{keyword}{True},
+6    ),
+7    \textcolor{comment}{#'default' : dict(}
+8    \textcolor{comment}{#   BACKEND = 'johnny.backends.redis.RedisCache',}
+9    \textcolor{comment}{#   LOCATION = '127.0.0.1:11211',}
+10    \textcolor{comment}{#   JOHNNY\_CACHE = True,}
+11    \textcolor{comment}{#   OPTIONS = dict(}
+12    \textcolor{comment}{#      CLIENT\_CLASS = "redis\_cache.client.DefaultClient",}
+13    \textcolor{comment}{#   )}
+14    \textcolor{comment}{#),}
+15 
+16    \textcolor{comment}{#'default': dict(}
+17    \textcolor{comment}{#   BACKEND = 'core.json\_cache.MemcachedCacheJSON',}
+18    \textcolor{comment}{#   KEY\_FUNCTION = lambda key, key\_prefix, version: key,}
+19    \textcolor{comment}{#   LOCATION = ['127.0.0.1:11211', ],}
+20    \textcolor{comment}{#   JOHNNY\_CACHE = True,}
+21    \textcolor{comment}{#)}
+22 \}
+\end{DoxyCode}
+
+
+Cache. 
+
+\hypertarget{namespacewepo_1_1settings__local_a0ddad315e1cafe9c0abdddc17f245c32}{\index{wepo\-::settings\-\_\-local@{wepo\-::settings\-\_\-local}!D\-A\-T\-A\-B\-A\-S\-E\-S@{D\-A\-T\-A\-B\-A\-S\-E\-S}}
+\index{D\-A\-T\-A\-B\-A\-S\-E\-S@{D\-A\-T\-A\-B\-A\-S\-E\-S}!wepo::settings_local@{wepo\-::settings\-\_\-local}}
+\subsubsection[{D\-A\-T\-A\-B\-A\-S\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}dictionary wepo.\-settings\-\_\-local.\-D\-A\-T\-A\-B\-A\-S\-E\-S}}\label{namespacewepo_1_1settings__local_a0ddad315e1cafe9c0abdddc17f245c32}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \{
+2    \textcolor{stringliteral}{'default'}: \{
+3       \textcolor{stringliteral}{'ENGINE'}:   \textcolor{stringliteral}{'django.db.backends.mysql'},
+4       \textcolor{stringliteral}{'NAME'}:     \textcolor{stringliteral}{'wepo'},
+5       \textcolor{stringliteral}{'USER'}:     \textcolor{stringliteral}{'root'},
+6       \textcolor{stringliteral}{'PASSWORD'}: \textcolor{stringliteral}{''},
+7       \textcolor{comment}{#'HOST':     '/opt/lampstack/lampstack-5.4.17-0/mysql/tmp/mysql.sock',}
+8       \textcolor{stringliteral}{'HOST'}:     \textcolor{stringliteral}{'/opt/dlamp/mysql/tmp/mysql.sock'},
+9       \textcolor{comment}{#'HOST':     '/opt/dlamp/mysql/tmp/mysql.sock',}
+10       \textcolor{stringliteral}{'PORT'}:     \textcolor{stringliteral}{'3306'},
+11    \}
+12 \}
+\end{DoxyCode}
+
+
+Database. 
+
+\hypertarget{namespacewepo_1_1settings__local_ab901350a2926e04c72533eb35929e544}{\index{wepo\-::settings\-\_\-local@{wepo\-::settings\-\_\-local}!D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T@{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T}}
+\index{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T@{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T}!wepo::settings_local@{wepo\-::settings\-\_\-local}}
+\subsubsection[{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}wepo.\-settings\-\_\-local.\-D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T = True}}\label{namespacewepo_1_1settings__local_ab901350a2926e04c72533eb35929e544}
+
+
+Development environment? 
+
+\hypertarget{namespacewepo_1_1settings__local_a1f16861da0c8d2a2e984d57e5ea2b784}{\index{wepo\-::settings\-\_\-local@{wepo\-::settings\-\_\-local}!M\-E\-D\-I\-A\-\_\-\-U\-R\-L@{M\-E\-D\-I\-A\-\_\-\-U\-R\-L}}
+\index{M\-E\-D\-I\-A\-\_\-\-U\-R\-L@{M\-E\-D\-I\-A\-\_\-\-U\-R\-L}!wepo::settings_local@{wepo\-::settings\-\_\-local}}
+\subsubsection[{M\-E\-D\-I\-A\-\_\-\-U\-R\-L}]{\setlength{\rightskip}{0pt plus 5cm}string wepo.\-settings\-\_\-local.\-M\-E\-D\-I\-A\-\_\-\-U\-R\-L = '/media/'}}\label{namespacewepo_1_1settings__local_a1f16861da0c8d2a2e984d57e5ea2b784}
+
+
+U\-R\-L that handles the media served from M\-E\-D\-I\-A\-\_\-\-R\-O\-O\-T. 
+
+Make sure to use a trailing slash. \hypertarget{namespacewepo_1_1settings__local_a2a6dd2eb093d78609eb8995efb98d166}{\index{wepo\-::settings\-\_\-local@{wepo\-::settings\-\_\-local}!W\-E\-P\-O\-\_\-\-A\-P\-P\-S@{W\-E\-P\-O\-\_\-\-A\-P\-P\-S}}
+\index{W\-E\-P\-O\-\_\-\-A\-P\-P\-S@{W\-E\-P\-O\-\_\-\-A\-P\-P\-S}!wepo::settings_local@{wepo\-::settings\-\_\-local}}
+\subsubsection[{W\-E\-P\-O\-\_\-\-A\-P\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}list wepo.\-settings\-\_\-local.\-W\-E\-P\-O\-\_\-\-A\-P\-P\-S = \mbox{[}$\,$\mbox{]}}}\label{namespacewepo_1_1settings__local_a2a6dd2eb093d78609eb8995efb98d166}
+
+
+Wepo apps List all installed apps here. 
+

@@ -1,0 +1,208 @@
+\hypertarget{classcore_1_1models_1_1Seo}{\section{core.\-models.\-Seo Class Reference}
+\label{classcore_1_1models_1_1Seo}\index{core.\-models.\-Seo@{core.\-models.\-Seo}}
+}
+
+
+\hyperlink{classcore_1_1models_1_1Seo}{Seo}.  
+
+
+Inheritance diagram for core.\-models.\-Seo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcore_1_1models_1_1Seo}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1models_1_1Seo_1_1Meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcore_1_1models_1_1Seo_abcdc25916c3a122583536783a570b929}{\-\_\-\-\_\-unicode\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcore_1_1models_1_1Seo_a34873176512334dc1aadb3eaceff0017}{delete}
+\begin{DoxyCompactList}\small\item\em Custom delete method. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1Seo_a9851406bdaf723e7ad3df70251eafb93}{save}
+\begin{DoxyCompactList}\small\item\em Custom save method. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1Seo_a1eeec2b20f1ef7ff477688c6d954ffd9}{get\-\_\-model\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Get seo for model. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1Seo_aec1160ede01bc3550806a3b028455289}{update\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Update/create seo for model. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1Seo_a19d839f4bace8ba7a035fe0a551145e7}{get\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Get seo link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1models_1_1Seo_a7c32328ad2bf566ea1902cbe0d9c541c}{enabled}
+\item 
+\hyperlink{classcore_1_1models_1_1Seo_a644a0f17aaa68dc004c064e4f8be688d}{key\-\_\-name}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcore_1_1models_1_1Seo_a7d34532dc903e2764ef053b995d9a0f9}{url} = dmodels.\-U\-R\-L\-Field(db\-\_\-index=True, max\-\_\-length=255)
+\begin{DoxyCompactList}\small\item\em Url of the seo link. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Seo_a644a0f17aaa68dc004c064e4f8be688d}{key\-\_\-name} = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em Unique identifier of the menu item. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Seo_a67e819a81be21ee3247e3f0d733d6772}{redirect} = dmodels.\-Foreign\-Key('self', null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em Redirect to another seo link. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Seo_a75b7a9a79c0c67e3c225b9b3e2dac2ea}{content} = dmodels.\-Positive\-Integer\-Field(null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em Id of the content with which the seo is linked. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Seo_ac102fd07ac9043d0b8f84fd7079e4eb0}{content\-\_\-type} = dmodels.\-Char\-Field(max\-\_\-length=128, db\-\_\-index=True, null=True, blank=True)
+\item 
+tuple \hyperlink{classcore_1_1models_1_1Seo_a7c32328ad2bf566ea1902cbe0d9c541c}{enabled} = dmodels.\-Boolean\-Field(default=True)
+\begin{DoxyCompactList}\small\item\em Status if the seo link is enabled. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Seo_ae72954b787413173ed2e710d3add951a}{page} = dmodels.\-Foreign\-Key(\hyperlink{classcore_1_1models_1_1Page}{Page}, null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1Page}{Page} to display under this seo. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1Seo_a419861c449c0a62ef623885ab179ce69}{callback} = dmodels.\-Text\-Field(null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em Block callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcore_1_1models_1_1Seo}{Seo}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcore_1_1models_1_1Seo_abcdc25916c3a122583536783a570b929}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{\-\_\-\-\_\-unicode\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Seo.\-\_\-\-\_\-unicode\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Seo_abcdc25916c3a122583536783a570b929}
+\hypertarget{classcore_1_1models_1_1Seo_a34873176512334dc1aadb3eaceff0017}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!delete@{delete}}
+\index{delete@{delete}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Seo.\-delete (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Seo_a34873176512334dc1aadb3eaceff0017}
+
+
+Custom delete method. 
+
+\hypertarget{classcore_1_1models_1_1Seo_a1eeec2b20f1ef7ff477688c6d954ffd9}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!get\-\_\-model\-\_\-seo@{get\-\_\-model\-\_\-seo}}
+\index{get\-\_\-model\-\_\-seo@{get\-\_\-model\-\_\-seo}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{get\-\_\-model\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Seo.\-get\-\_\-model\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{cls, }
+\item[{}]{model}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Seo_a1eeec2b20f1ef7ff477688c6d954ffd9}
+
+
+Get seo for model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Model \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcore_1_1models_1_1Seo_a19d839f4bace8ba7a035fe0a551145e7}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!get\-\_\-seo@{get\-\_\-seo}}
+\index{get\-\_\-seo@{get\-\_\-seo}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{get\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Seo.\-get\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Seo_a19d839f4bace8ba7a035fe0a551145e7}
+
+
+Get seo link. 
+
+\hypertarget{classcore_1_1models_1_1Seo_a9851406bdaf723e7ad3df70251eafb93}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!save@{save}}
+\index{save@{save}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Seo.\-save (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{force\-\_\-insert = {\ttfamily False}, }
+\item[{}]{force\-\_\-update = {\ttfamily False}, }
+\item[{}]{using = {\ttfamily None}, }
+\item[{}]{update\-\_\-fields = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Seo_a9851406bdaf723e7ad3df70251eafb93}
+
+
+Custom save method. 
+
+\hypertarget{classcore_1_1models_1_1Seo_aec1160ede01bc3550806a3b028455289}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!update\-\_\-seo@{update\-\_\-seo}}
+\index{update\-\_\-seo@{update\-\_\-seo}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{update\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-Seo.\-update\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{cls, }
+\item[{}]{model, }
+\item[{}]{page = {\ttfamily None}, }
+\item[{}]{block = {\ttfamily None}, }
+\item[{}]{force\-\_\-new = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1Seo_aec1160ede01bc3550806a3b028455289}
+
+
+Update/create seo for model. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcore_1_1models_1_1Seo_a419861c449c0a62ef623885ab179ce69}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!callback@{callback}}
+\index{callback@{callback}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{callback}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Seo.\-callback = dmodels.\-Text\-Field(null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Seo_a419861c449c0a62ef623885ab179ce69}
+
+
+Block callback. 
+
+\hypertarget{classcore_1_1models_1_1Seo_a75b7a9a79c0c67e3c225b9b3e2dac2ea}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!content@{content}}
+\index{content@{content}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{content}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Seo.\-content = dmodels.\-Positive\-Integer\-Field(null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Seo_a75b7a9a79c0c67e3c225b9b3e2dac2ea}
+
+
+Id of the content with which the seo is linked. 
+
+Type of the content with which the seo is linked (usually model name,...) \hypertarget{classcore_1_1models_1_1Seo_ac102fd07ac9043d0b8f84fd7079e4eb0}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!content\-\_\-type@{content\-\_\-type}}
+\index{content\-\_\-type@{content\-\_\-type}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{content\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}tuple core.\-models.\-Seo.\-content\-\_\-type = dmodels.\-Char\-Field(max\-\_\-length=128, db\-\_\-index=True, null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Seo_ac102fd07ac9043d0b8f84fd7079e4eb0}
+\hypertarget{classcore_1_1models_1_1Seo_a7c32328ad2bf566ea1902cbe0d9c541c}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!enabled@{enabled}}
+\index{enabled@{enabled}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Seo.\-enabled = dmodels.\-Boolean\-Field(default=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Seo_a7c32328ad2bf566ea1902cbe0d9c541c}
+
+
+Status if the seo link is enabled. 
+
+\hypertarget{classcore_1_1models_1_1Seo_a7c32328ad2bf566ea1902cbe0d9c541c}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!enabled@{enabled}}
+\index{enabled@{enabled}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Seo.\-enabled}}\label{classcore_1_1models_1_1Seo_a7c32328ad2bf566ea1902cbe0d9c541c}
+\hypertarget{classcore_1_1models_1_1Seo_a644a0f17aaa68dc004c064e4f8be688d}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Seo.\-key\-\_\-name = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Seo_a644a0f17aaa68dc004c064e4f8be688d}
+
+
+Unique identifier of the menu item. 
+
+\hypertarget{classcore_1_1models_1_1Seo_a644a0f17aaa68dc004c064e4f8be688d}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!key\-\_\-name@{key\-\_\-name}}
+\index{key\-\_\-name@{key\-\_\-name}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{key\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Seo.\-key\-\_\-name}}\label{classcore_1_1models_1_1Seo_a644a0f17aaa68dc004c064e4f8be688d}
+\hypertarget{classcore_1_1models_1_1Seo_ae72954b787413173ed2e710d3add951a}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!page@{page}}
+\index{page@{page}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{page}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Seo.\-page = dmodels.\-Foreign\-Key({\bf Page}, null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Seo_ae72954b787413173ed2e710d3add951a}
+
+
+\hyperlink{classcore_1_1models_1_1Page}{Page} to display under this seo. 
+
+\hypertarget{classcore_1_1models_1_1Seo_a67e819a81be21ee3247e3f0d733d6772}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!redirect@{redirect}}
+\index{redirect@{redirect}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{redirect}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Seo.\-redirect = dmodels.\-Foreign\-Key('self', null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Seo_a67e819a81be21ee3247e3f0d733d6772}
+
+
+Redirect to another seo link. 
+
+\hypertarget{classcore_1_1models_1_1Seo_a7d34532dc903e2764ef053b995d9a0f9}{\index{core\-::models\-::\-Seo@{core\-::models\-::\-Seo}!url@{url}}
+\index{url@{url}!core::models::Seo@{core\-::models\-::\-Seo}}
+\subsubsection[{url}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-Seo.\-url = dmodels.\-U\-R\-L\-Field(db\-\_\-index=True, max\-\_\-length=255)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1Seo_a7d34532dc903e2764ef053b995d9a0f9}
+
+
+Url of the seo link. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/wepo/core/\hyperlink{models_8py}{models.\-py}\end{DoxyCompactItemize}

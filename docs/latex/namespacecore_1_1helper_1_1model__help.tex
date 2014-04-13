@@ -1,0 +1,105 @@
+\hypertarget{namespacecore_1_1helper_1_1model__help}{\section{core.\-helper.\-model\-\_\-help Namespace Reference}
+\label{namespacecore_1_1helper_1_1model__help}\index{core.\-helper.\-model\-\_\-help@{core.\-helper.\-model\-\_\-help}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecore_1_1helper_1_1model__help_a2f17d8518a77743ce8dcb1e2fdb7d356}{get\-\_\-model}
+\begin{DoxyCompactList}\small\item\em Get model for given key-\/name. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1helper_1_1model__help_a498e90521cbf327f52440ef3ab26ee1f}{get\-\_\-installed\-\_\-models}
+\begin{DoxyCompactList}\small\item\em Get models from installed apps. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1helper_1_1model__help_aecfd965d5110a1338bc7e8064f00c653}{get\-\_\-model\-\_\-fields}
+\begin{DoxyCompactList}\small\item\em Get model field settings. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecore_1_1helper_1_1model__help_a4a997f56dbeb742710336c2ddb9e321e}{get\-\_\-model\-\_\-groups}
+\begin{DoxyCompactList}\small\item\em Get model field groups. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacecore_1_1helper_1_1model__help_a498e90521cbf327f52440ef3ab26ee1f}{\index{core\-::helper\-::model\-\_\-help@{core\-::helper\-::model\-\_\-help}!get\-\_\-installed\-\_\-models@{get\-\_\-installed\-\_\-models}}
+\index{get\-\_\-installed\-\_\-models@{get\-\_\-installed\-\_\-models}!core::helper::model_help@{core\-::helper\-::model\-\_\-help}}
+\subsubsection[{get\-\_\-installed\-\_\-models}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-helper.\-model\-\_\-help.\-get\-\_\-installed\-\_\-models (
+\begin{DoxyParamCaption}
+\item[{}]{by\-\_\-model = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1helper_1_1model__help_a498e90521cbf327f52440ef3ab26ee1f}
+
+
+Get models from installed apps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em by\-\_\-model} & Return by model name instead of by model db name \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacecore_1_1helper_1_1model__help_a2f17d8518a77743ce8dcb1e2fdb7d356}{\index{core\-::helper\-::model\-\_\-help@{core\-::helper\-::model\-\_\-help}!get\-\_\-model@{get\-\_\-model}}
+\index{get\-\_\-model@{get\-\_\-model}!core::helper::model_help@{core\-::helper\-::model\-\_\-help}}
+\subsubsection[{get\-\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-helper.\-model\-\_\-help.\-get\-\_\-model (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{key\-\_\-name, }
+\item[{}]{by\-\_\-model = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1helper_1_1model__help_a2f17d8518a77743ce8dcb1e2fdb7d356}
+
+
+Get model for given key-\/name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request object \\
+\hline
+{\em key\-\_\-name} & Key name of the model \\
+\hline
+{\em by\-\_\-model} & Return by model name instead of by model db name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valid model or None 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1helper_1_1model__help_aecfd965d5110a1338bc7e8064f00c653}{\index{core\-::helper\-::model\-\_\-help@{core\-::helper\-::model\-\_\-help}!get\-\_\-model\-\_\-fields@{get\-\_\-model\-\_\-fields}}
+\index{get\-\_\-model\-\_\-fields@{get\-\_\-model\-\_\-fields}!core::helper::model_help@{core\-::helper\-::model\-\_\-help}}
+\subsubsection[{get\-\_\-model\-\_\-fields}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-helper.\-model\-\_\-help.\-get\-\_\-model\-\_\-fields (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{model}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1helper_1_1model__help_aecfd965d5110a1338bc7e8064f00c653}
+
+
+Get model field settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request \\
+\hline
+{\em model} & Database model\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fields from given model 
+\end{DoxyReturn}
+\hypertarget{namespacecore_1_1helper_1_1model__help_a4a997f56dbeb742710336c2ddb9e321e}{\index{core\-::helper\-::model\-\_\-help@{core\-::helper\-::model\-\_\-help}!get\-\_\-model\-\_\-groups@{get\-\_\-model\-\_\-groups}}
+\index{get\-\_\-model\-\_\-groups@{get\-\_\-model\-\_\-groups}!core::helper::model_help@{core\-::helper\-::model\-\_\-help}}
+\subsubsection[{get\-\_\-model\-\_\-groups}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-helper.\-model\-\_\-help.\-get\-\_\-model\-\_\-groups (
+\begin{DoxyParamCaption}
+\item[{}]{request, }
+\item[{}]{model, }
+\item[{}]{include\-\_\-multiple = {\ttfamily True}, }
+\item[{}]{include\-\_\-read\-\_\-only = {\ttfamily True}, }
+\item[{}]{excludes = {\ttfamily \mbox{[}\mbox{]}}}
+\end{DoxyParamCaption}
+)}}\label{namespacecore_1_1helper_1_1model__help_a4a997f56dbeb742710336c2ddb9e321e}
+
+
+Get model field groups. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Current request \\
+\hline
+{\em model} & Database model\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fields groups from given model 
+\end{DoxyReturn}

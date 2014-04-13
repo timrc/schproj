@@ -1,0 +1,9 @@
+{% autoescape off %}
+<div class="tab-pane {% if active %}active{% endif %}" id="tab{{ group_number }}">
+
+{% for panel in panels %}
+   {{ panel }}
+{% endfor %}
+
+</div>
+{% endautoescape %}

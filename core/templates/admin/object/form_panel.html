@@ -1,0 +1,11 @@
+{% load core_filters %}
+{% autoescape off %}
+<fieldset>
+   <legend class="section">{{ name|_ }}</legend>
+
+   {% for field in fields %}
+      {{ field }}
+   {% endfor %}
+
+</fieldset>
+{% endautoescape %}

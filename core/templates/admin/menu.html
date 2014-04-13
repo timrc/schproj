@@ -1,0 +1,5 @@
+<ul id="nav">
+   {% for item in items %}
+      {% include include_template with item=item include_template=include_template %}
+   {% endfor %}
+</ul>

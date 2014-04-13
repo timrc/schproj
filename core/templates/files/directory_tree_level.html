@@ -1,0 +1,18 @@
+{% for directory in childs %}
+<li id="directory_{{ directory.id }}">
+   <div>
+      <span class="disclose"></span>
+      <span class="directory_icon"></span>
+      <a href="#" class='files-directory' data-files-directory={{ directory.id }}>{{ directory.name }}</a>
+   </div>
+   {% if directory.childs %}
+   <ol>
+      {% with 'files/directory_tree_level.html' as filename %}
+      {% with directory.childs as childs %}
+         {% include filename %}
+      {% endwith %}
+      {% endwith %}
+   </ol>
+   {% endif %}
+</li>
+{% endfor %}

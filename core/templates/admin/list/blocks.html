@@ -1,0 +1,65 @@
+<style>
+   .ver-inline-menu {margin-bottom: 10px !important;margin: 0px;list-style: none;}
+   .ver-inline-menu li {position: relative;margin-bottom: 1px;}
+   .ver-inline-menu li a {font-size: 13px;color: #557386;display: block;background: #f0f6fa;border-left: solid 2px #c4d5df;}
+   .ver-inline-menu li a i {color: #b9cbd5;font-size: 15px;padding: 11px 9px;margin: 0 8px 0 0;background: #e0eaf0 !important;vertical-align: middle;}
+   .tab-content-blocks {padding: 0;}
+   .accordion .accordion-heading .accordion-toggle {background-color: #eee;color: #000;text-decoration: none;box-shadow: none;text-shadow: none;border-radius: 0;}
+   .widget:before, .widget:after {-webkit-box-shadow:0;-moz-box-shadow:0;box-shadow:0;}
+</style>
+<div class="row-fluid">
+	<div class="span12">
+		<div class="span3">
+			<ul class="ver-inline-menu tabbable margin-bottom-10">
+
+            {% for app,items in data.items %}
+            <li class="test {% if forloop.first %}active{% endif %}">
+               <a data-toggle="tab" href="#tab_{{ forloop.counter }}"><i class="icon-leaf"></i>{{ app|title }}</a>
+            </li>
+            {% endfor %}
+
+			</ul>
+		</div>
+		<div class="span9">
+			<div class="tab-content-blocks tab-content">
+
+            {% for app,items in data.items %}
+            <div id="tab_{{ forloop.counter }}" class="tab-pane {% if forloop.first %}active{% endif %}">
+               <div style="height: auto;" id="accordion{{ forloop.counter }}" class="accordion in collapse">
+
+               {% with parentcounter=forloop.counter %}
+               {% for group, blocks in items.items %}
+               <div class="accordion-group">
+                  <div class="accordion-heading">
+                     <a href="#collapse_{{ forloop.counter }}" data-parent="#accordion{{ parentcounter }}" data-toggle="collapse" class="accordion-toggle">
+                        {{ group|title }}
+                     </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapse_{{ forloop.counter }}" style="height: 0px;">
+                     <div class="accordion-inner">
+                        <div class="block">
+
+                        {% for block in blocks %}
+                        <div class="btn btn-icon btn-default btn-block glyphicons group count">
+                           <span>
+                              <button class="btn btn-info btn-small select-block" data-block="{{ block.path }}" data-block-name="{{ block.name|title }}" data-section="{{ section }}">Select</button>
+                           </span>
+                           {{ block.name|title }}
+                        </div>
+                        {% endfor %}
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               {% endfor %}
+               {% endwith %}
+
+               </div>
+               {% endfor %}
+
+            </div>
+			</div>
+		</div>
+	</div>
+</div>

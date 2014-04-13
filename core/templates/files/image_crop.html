@@ -1,0 +1,10 @@
+<div id="image_scales">
+{% for scale in scales %}
+   <h2>{{ scale.name }}</h2>
+   <img src="" id="crop_{{ scale.prefix }}" data-prefix="{{ scale.prefix }}" data-width="{{ scale.width }}" data-height="{{ scale.height }}" width="600" />
+{% endfor %}
+</div>
+
+<div class="buttons pull-left">
+   <a href="#" class="btn btn-success btn-icon file-image-crop"><i></i> Save crops</a>
+</div>

@@ -1,0 +1,21 @@
+{% for stack in form.get_stacks %}
+   {% if forloop.first %}
+      <div class="tab-pane active" id="tab-{{ stack.label }}">
+   {% else %}
+      <div class="tab-pane" id="tab-{{ stack.label }}">
+   {% endif %}
+
+{% for field in stack %}
+
+   {% if field.is_group %}
+      {% for f in field %}
+         {{ f }}
+      {% endfor %}
+   {% else %}
+      {{ field }}
+   {% endif %}
+
+{% endfor %}
+
+</div>
+{% endfor %}

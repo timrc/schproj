@@ -1,0 +1,19 @@
+{% load core_filters %}
+
+<div class="control-group {% if field.errors %}error{% endif %}">
+   {% comment %}
+   {% if field|wepo_label_visible %}
+      <label class="control-label" for="{{ field.id_for_label }}">{{ field.label.title }} <span class="required">*</span></label>
+   {% endif %}
+   {% endcomment %}
+   <label class="control-label">{{ field.label.title }} <span class="required">*</span></label>
+   <div class="controls">
+      {{ field }}
+   </div>
+   {% comment %}
+   if field.errors %}
+      {{ field.errors }}
+   {% endif %}
+   {% endcomment %}
+   <span class="tooltip-help">{{ field.help_text }}</span>
+</div>

@@ -1,0 +1,19 @@
+{% autoescape off %}
+
+<div data-provides="image">
+   <div class="thumbnail">
+      {% if file %}
+         <img class="image-thumbnail" src="/media/{{ file.path }}/{{ file.file_name }}" />
+      {% else %}
+         <img class="image-thumbnail" src="" />
+      {% endif %}
+   </div>
+   <div>
+      <span class="btn btn-file btn-inverse btn-icon glyphicons picture"><i></i>
+         <span class="files-image-select" data-files="{{ data_files }}" data-placeholder="image-thumbnail" data-control-id="{{ control_id }}">Select image</span>
+         {{ file_data }}
+      </span>
+   </div>
+</div>
+
+{% endautoescape %}

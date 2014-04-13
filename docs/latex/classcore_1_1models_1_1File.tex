@@ -1,0 +1,179 @@
+\hypertarget{classcore_1_1models_1_1File}{\section{core.\-models.\-File Class Reference}
+\label{classcore_1_1models_1_1File}\index{core.\-models.\-File@{core.\-models.\-File}}
+}
+
+
+\hyperlink{classcore_1_1models_1_1File}{File}.  
+
+
+Inheritance diagram for core.\-models.\-File\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcore_1_1models_1_1File}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1models_1_1File_1_1Meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcore_1_1models_1_1File_aa55a62aec4d1cbfab35d6a3acbcb7839}{\-\_\-\-\_\-unicode\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcore_1_1models_1_1File_a22cd87afedaecdd3f0106d14f537602e}{save}
+\begin{DoxyCompactList}\small\item\em Custom save method. \end{DoxyCompactList}\item 
+def \hyperlink{classcore_1_1models_1_1File_a8b5338739bfbf9271fbe914ff6024d77}{get\-\_\-seo}
+\begin{DoxyCompactList}\small\item\em Get seo link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcore_1_1models_1_1File_a00e09db629f9ff8114662c4e950927bb}{file\-\_\-name} = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1File}{File} name of the file. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_aedfac4d90aea7deacffb837534bb92bc}{mime\-\_\-type} = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em Unique identifier of the file. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_a18f6917981a73daa38b337f1e167c2d5}{size} = dmodels.\-Char\-Field(max\-\_\-length=255)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1File}{File} size. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_a8b5744511785ff36e1312245bb92955e}{title} = dmodels.\-Text\-Field()
+\begin{DoxyCompactList}\small\item\em Title of the file. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_a3ba747aa055c9952345d32fd0a2e93df}{description} = dmodels.\-Text\-Field()
+\begin{DoxyCompactList}\small\item\em Description of the file. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_a4b56e6ce2f5bd75ad78f41cea297fd49}{author} = dmodels.\-Text\-Field()
+\begin{DoxyCompactList}\small\item\em Author of the file. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_a5e8a1bacede61e2e1f2386907e63e274}{path} = dmodels.\-Text\-Field()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1File}{File} path. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_a786c3b3f61bd0e38ea5d32310391a235}{data} = \hyperlink{classcore_1_1fields_1_1JsonField}{Json\-Field}(null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em Data about crops, different sizes, etc... \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_adaa3cc04ed44b20d1796df296373e9ba}{created} = dmodels.\-Date\-Time\-Field(db\-\_\-index=True)
+\begin{DoxyCompactList}\small\item\em Date time of creation. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_a65e05c5c5dee44c2c73d8a202845209f}{directory} = dmodels.\-Foreign\-Key('\hyperlink{classcore_1_1models_1_1Directory}{Directory}', null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em Virtual directory. \end{DoxyCompactList}\item 
+tuple \hyperlink{classcore_1_1models_1_1File_a1925fe1551da140f13cb0295d3c250a3}{owner} = dmodels.\-Foreign\-Key('\hyperlink{classcore_1_1models_1_1User}{User}', null=True, blank=True)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcore_1_1models_1_1File}{File} owner (uploader) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcore_1_1models_1_1File}{File}. 
+
+Files 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcore_1_1models_1_1File_aa55a62aec4d1cbfab35d6a3acbcb7839}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-unicode\-\_\-\-\_\-@{\-\_\-\-\_\-unicode\-\_\-\-\_\-}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{\-\_\-\-\_\-unicode\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-File.\-\_\-\-\_\-unicode\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1File_aa55a62aec4d1cbfab35d6a3acbcb7839}
+\hypertarget{classcore_1_1models_1_1File_a8b5338739bfbf9271fbe914ff6024d77}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!get\-\_\-seo@{get\-\_\-seo}}
+\index{get\-\_\-seo@{get\-\_\-seo}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{get\-\_\-seo}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-File.\-get\-\_\-seo (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1File_a8b5338739bfbf9271fbe914ff6024d77}
+
+
+Get seo link. 
+
+\hypertarget{classcore_1_1models_1_1File_a22cd87afedaecdd3f0106d14f537602e}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!save@{save}}
+\index{save@{save}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}def core.\-models.\-File.\-save (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{force\-\_\-insert = {\ttfamily False}, }
+\item[{}]{force\-\_\-update = {\ttfamily False}, }
+\item[{}]{using = {\ttfamily None}, }
+\item[{}]{update\-\_\-fields = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classcore_1_1models_1_1File_a22cd87afedaecdd3f0106d14f537602e}
+
+
+Custom save method. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcore_1_1models_1_1File_a4b56e6ce2f5bd75ad78f41cea297fd49}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!author@{author}}
+\index{author@{author}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{author}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-author = dmodels.\-Text\-Field()\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_a4b56e6ce2f5bd75ad78f41cea297fd49}
+
+
+Author of the file. 
+
+\hypertarget{classcore_1_1models_1_1File_adaa3cc04ed44b20d1796df296373e9ba}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!created@{created}}
+\index{created@{created}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{created}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-created = dmodels.\-Date\-Time\-Field(db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_adaa3cc04ed44b20d1796df296373e9ba}
+
+
+Date time of creation. 
+
+\hypertarget{classcore_1_1models_1_1File_a786c3b3f61bd0e38ea5d32310391a235}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!data@{data}}
+\index{data@{data}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-data = {\bf Json\-Field}(null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_a786c3b3f61bd0e38ea5d32310391a235}
+
+
+Data about crops, different sizes, etc... 
+
+\hypertarget{classcore_1_1models_1_1File_a3ba747aa055c9952345d32fd0a2e93df}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!description@{description}}
+\index{description@{description}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-description = dmodels.\-Text\-Field()\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_a3ba747aa055c9952345d32fd0a2e93df}
+
+
+Description of the file. 
+
+\hypertarget{classcore_1_1models_1_1File_a65e05c5c5dee44c2c73d8a202845209f}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!directory@{directory}}
+\index{directory@{directory}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{directory}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-directory = dmodels.\-Foreign\-Key('{\bf Directory}', null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_a65e05c5c5dee44c2c73d8a202845209f}
+
+
+Virtual directory. 
+
+\hypertarget{classcore_1_1models_1_1File_a00e09db629f9ff8114662c4e950927bb}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!file\-\_\-name@{file\-\_\-name}}
+\index{file\-\_\-name@{file\-\_\-name}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{file\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-file\-\_\-name = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_a00e09db629f9ff8114662c4e950927bb}
+
+
+\hyperlink{classcore_1_1models_1_1File}{File} name of the file. 
+
+\hypertarget{classcore_1_1models_1_1File_aedfac4d90aea7deacffb837534bb92bc}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!mime\-\_\-type@{mime\-\_\-type}}
+\index{mime\-\_\-type@{mime\-\_\-type}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{mime\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-mime\-\_\-type = dmodels.\-Char\-Field(max\-\_\-length=255, db\-\_\-index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_aedfac4d90aea7deacffb837534bb92bc}
+
+
+Unique identifier of the file. 
+
+\hypertarget{classcore_1_1models_1_1File_a1925fe1551da140f13cb0295d3c250a3}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!owner@{owner}}
+\index{owner@{owner}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{owner}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-owner = dmodels.\-Foreign\-Key('{\bf User}', null=True, blank=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_a1925fe1551da140f13cb0295d3c250a3}
+
+
+\hyperlink{classcore_1_1models_1_1File}{File} owner (uploader) 
+
+\hypertarget{classcore_1_1models_1_1File_a5e8a1bacede61e2e1f2386907e63e274}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!path@{path}}
+\index{path@{path}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-path = dmodels.\-Text\-Field()\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_a5e8a1bacede61e2e1f2386907e63e274}
+
+
+\hyperlink{classcore_1_1models_1_1File}{File} path. 
+
+\hypertarget{classcore_1_1models_1_1File_a18f6917981a73daa38b337f1e167c2d5}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!size@{size}}
+\index{size@{size}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-size = dmodels.\-Char\-Field(max\-\_\-length=255)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_a18f6917981a73daa38b337f1e167c2d5}
+
+
+\hyperlink{classcore_1_1models_1_1File}{File} size. 
+
+\hypertarget{classcore_1_1models_1_1File_a8b5744511785ff36e1312245bb92955e}{\index{core\-::models\-::\-File@{core\-::models\-::\-File}!title@{title}}
+\index{title@{title}!core::models::File@{core\-::models\-::\-File}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}core.\-models.\-File.\-title = dmodels.\-Text\-Field()\hspace{0.3cm}{\ttfamily [static]}}}\label{classcore_1_1models_1_1File_a8b5744511785ff36e1312245bb92955e}
+
+
+Title of the file. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/wepo/core/\hyperlink{models_8py}{models.\-py}\end{DoxyCompactItemize}

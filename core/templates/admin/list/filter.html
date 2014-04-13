@@ -1,0 +1,18 @@
+<div class="widget collapsed row-fluid">
+   <div class="widget-header">
+         <span class="title">Filter</span>
+      <div class="toolbar">
+       <span data-toggle="widget" class="btn"><i class="icon-sort"></i></span>
+      </div>
+   </div>
+   <div class="widget-content form-container">
+      <form class="form-horizontal" method="get">
+
+         {{ filter_form.as_stack_fields }}
+
+         <div class="form-actions btn-toolbar">
+            <input type="submit" value="Filter" class="btn btn-success pull-right">
+         </div>
+      </form>
+   </div>
+</div>

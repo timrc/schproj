@@ -1,0 +1,36 @@
+<div class="row-fluid">
+   <div class="span12 widget">
+      <div class="widget-header">
+         <span class="title">{{ model|title }}</span>
+      </div>
+
+      <div class="widget-content form-container">
+
+         <form id="validate-edit-{{ model }}" class="vertical-form model-form" method="post" action='{{ action }}'>
+            <input type="hidden" name="wr" value="json" />
+
+            <input type="hidden" name="wepo_model" value="{{ model }}" />
+            <input type="hidden" name="wepo_instance" value="{{ id }}" />
+
+            <input type="hidden" name="wepo_parent_id" value="{{ parent_id }}" />
+            <input type="hidden" name="wepo_parent_model" value="{{ parent_model }}" />
+            <input type="hidden" name="wepo_parent_field" value="{{ parent_field }}" />
+
+            <input type="hidden" name="redirect-url" value="{{ redirect_url }}" />
+
+            <div class="tab-content">
+
+               {{ form.as_stack_fields }}
+
+            </div>
+
+            <div class="form-actions btn-toolbar">
+               <input type="button" value="{{ save_button }}" class="btn btn-primary btn-{{ save_button_type }} pull-right">
+               <input type="button" value="Cancel" class="btn btn-danger btn-cancel pull-right">
+            </div>
+         </form>
+
+      </div>
+
+   </div>
+</div>

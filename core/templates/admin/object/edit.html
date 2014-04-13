@@ -1,0 +1,66 @@
+{% load core_tags %}
+{% load core_filters %}
+{% autoescape off %}
+
+<div class="row">
+   <div class="col-lg-12">
+      <div class="widget">
+         <div class="widget-header"> <i class="icon-arrow-down"></i>
+            <h3>{% request %}{{ wepo.instance|_ }}{% endrequest %}</h3>
+         </div>
+         <div class="widget-content">
+            <div id="wizard">
+               <div id="rootwizard">
+                  <div class="navbar">
+                     <div class="navbar-inner">
+                        <div class="container">
+                           <ul class="nav">
+
+                           {% for group in groups %}
+                              {% if not group.data.extra %}
+                                 <li {% if forloop.first %}class="active"{% endif %}><a href="#tab{{ forloop.counter0 }}" data-toggle="tab">{{ group.name }}</a></li>
+                              {% endif %}
+                           {% endfor %}
+
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <form class="form-horizontal form-condensed" id="object-edit" action="/block/core/object/edit?raw=true" method="POST">
+
+                     {% if instance %}
+                        {{ edit_object_instance }}
+                     {% endif %}
+                     {{ edit_object_type }}
+
+                     {{ request_wr }}
+                     {{ request_raw }}
+                     <div class="tab-content">
+                        {{ form.render }}
+                     </div>
+
+                     <div class="row">
+                        <div class="col-md-12">
+                           <section class="panel">
+                              <div class="panel-body btn-gap">
+                                 <div class="pull-right">
+                                    {% if instance %}
+                                       <button type="submit" class="btn btn-icon btn-success" id="save_object"><i></i>{{ "Save changes"|_ }}</button>
+                                    {% else %}
+                                       <button type="submit" class="btn btn-icon btn-success" id="save_object"><i></i>{{ "Create object"|_ }}</button>
+                                    {% endif %}
+                                    <button type="button" class="btn btn-icon btn-danger" id="close_form"><i></i>{{ "Cancel"|_ }}</button>
+                                 </div>
+                              </div>
+                           </section>
+                        </div>
+                     </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{% endautoescape %}

@@ -1,0 +1,56 @@
+{% load core_tags %}
+{% load core_filters %}
+{% autoescape off %}
+
+<div class="accordion-assets-wrapper">
+<div id="accordion-assets" class="panel-group">
+   {% for location, asset_types in assets.items %}
+
+   <div class="panel">
+      <div class="panel-heading">
+         <a href="#asset-location-{{ location }}" data-toggle="collapse" class="accordion-toggle collapsed">Asset location - {{ location|title }}</a>
+      </div>
+      <div class="panel-collapse collapse" id="asset-location-{{ location }}" style="height: 0px;">
+         <div class="panel-body">
+            {% for asset_type, assets in asset_types.items %}
+
+            <div class="relativeWrap span4">
+               <div class="widget widget-gray widget-gray-white">
+                  <div class="widget-head">
+                     <h4 class="heading">{{ asset_type|title }}</h4>
+                     <button type="button" class="close close-sm add_asset_link" data-asset-type="{{ asset_type }}" data-asset-location="{{ location }}"> <i class="icon-plus"></i> </button>
+                  </div>
+                  <div class="widget-body cf nestable-lists">
+
+                     <div id="nestable-{{ asset_type }}-{{ location }}" class="dd sortable-{{ asset_type }} asset-type-{{ asset_type }} asset-location-{{ location }}">
+                        <ol class="dd-list">
+                           {% for asset in assets %}
+                           <li  class="dd-item" data-asset-path="{{ asset.path }}" data-asset-name="{{ asset.name|title }}" class="{% if asset.disabled %}disabled{% endif %}">
+                              <div class="dd-handle">
+                                 {{ asset.name|title }}
+                                 {% if asset.deletable %}
+                                    <button type="button" class="close close-sm delete-asset"> <i class="icon-remove"></i> </button>
+                                 {% else %}
+                                    <button type="button" class="close close-sm disable-asset"> <i class="icon-{% if asset.disabled %}plus{% else %}minus{% endif %}"></i> </button>
+                                 {% endif %}
+                              </div>
+                           </li>
+                           {% endfor %}
+                        </ol>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+            {% endfor %}
+         </div>
+      </div>
+   </div>
+
+   {% endfor %}
+
+   {{ input }}
+</div>
+</div>
+{% endautoescape %}

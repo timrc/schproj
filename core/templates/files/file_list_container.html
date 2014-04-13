@@ -1,0 +1,12 @@
+<div class="file_list_tags" {% if not files %}style="display:none;"{% endif %}>
+   <a href='#' class="btn btn-success btn-small file_tag file_tag_all" data-type='all'>All</a>
+   {% for tag in file_tags %}
+      <a href='#' class="btn btn-default btn-small file_tag file_tag_{{ tag }}" data-type="{{ tag }}">{{ tag|title }}</a>
+   {% endfor %}
+</div>
+<hr class="separator">
+
+<div id="files_list_container">
+   {% include 'files/file_list.html' with files=files %}
+   <div class="files_list_container_clear" style="clear: both"></div>
+</div>
